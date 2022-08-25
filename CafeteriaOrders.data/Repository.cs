@@ -26,18 +26,18 @@ namespace CafeteriaOrders.data
             save instances of TEntity.*/
 
             return dbcontext.Set<TEntity>();
-        } 
-        public virtual void remove(TEntity entity)
+        }
+        protected virtual void remove(TEntity entity)
         {
             dbcontext.Set<TEntity>().Remove(entity);
         }
 
-        public virtual void add(TEntity entity)
+        protected virtual void add(TEntity entity)
         {
             dbcontext.Set<TEntity>().Add(entity);
         }
 
-        public virtual void uodate(TEntity entity)
+        protected  virtual void uodate(TEntity entity)
         {
             dbcontext.Entry<TEntity>(entity).State = EntityState.Modified;
         }
