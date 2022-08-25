@@ -11,12 +11,12 @@ namespace CafeteriaOrders.data
         [Key]
         public int id { get; set; }
 
-        /*
-        // to handel fk 
+        
+        // to handel fk of cart id
         public int cartId { get; set; }
         [ForeignKey(nameof(cartId))]
         public Cart cart { get; set; }
-        */
+        
 
 
         // to handel fk that ref to meal of this cart item.... 

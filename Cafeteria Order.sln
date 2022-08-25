@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafeteria Order", "Cafeteria Order\Cafeteria Order.csproj", "{BA8B284E-3AE4-4FC2-B5CD-31E4CD7A5737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafeteria Order", "Cafeteria Order\Cafeteria Order.csproj", "{BA8B284E-3AE4-4FC2-B5CD-31E4CD7A5737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeteriaOrders.data", "CafeteriaOrders.data\CafeteriaOrders.data.csproj", "{7E91BF99-6FB9-42BA-9588-8B84AF8CE2BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CafeteriaOrders.data", "CafeteriaOrders.data\CafeteriaOrders.data.csproj", "{7E91BF99-6FB9-42BA-9588-8B84AF8CE2BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeteriaOrders.logic", "CafeteriaOrders.logic\CafeteriaOrders.logic.csproj", "{FDDBED76-792C-456B-8330-1D2A6B15F789}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7E91BF99-6FB9-42BA-9588-8B84AF8CE2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E91BF99-6FB9-42BA-9588-8B84AF8CE2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E91BF99-6FB9-42BA-9588-8B84AF8CE2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDBED76-792C-456B-8330-1D2A6B15F789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDBED76-792C-456B-8330-1D2A6B15F789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDBED76-792C-456B-8330-1D2A6B15F789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDBED76-792C-456B-8330-1D2A6B15F789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
