@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeteriaOrders.data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +11,7 @@ namespace CafeteriaOrders.logic.Models
         public string name { get; set; }
         public string image { get; set; }
         public decimal OverAllRate { get; set; }
-       // public Categories category { get; set; }
+        public Categories category { get; set; }
         public decimal price { get; set; }
         public int numberofUnits { get; set; }
          public RecipeViewModel recipe { get; set; } 

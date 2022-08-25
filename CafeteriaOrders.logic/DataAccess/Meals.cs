@@ -22,6 +22,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 numberofUnits = s.numberofUnits,
                 price = s.price,
                 OverAllRate = s.OverAllRate,
+                category = s.category,
                 //recipe = model.recipe,
                 //Reviews = model.Reviews,
             });
@@ -37,6 +38,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 numberofUnits = s.numberofUnits,
                 price = s.price,
                 OverAllRate = s.OverAllRate,
+                category = s.category,
                 //recipe = model.recipe,
                 //Reviews = model.Reviews,
             }).FirstOrDefault();
@@ -52,6 +54,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 numberofUnits = model.numberofUnits,
                 price = model.price,
                 OverAllRate = model.OverAllRate,
+                category = model.category,
                 //recipe = model.recipe,
                 //Reviews = model.Reviews,
 
@@ -69,6 +72,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 numberofUnits = model.numberofUnits,
                 price = model.price,
                 OverAllRate = model.OverAllRate,
+                category = model.category,
                 //recipe = model.recipe,
                 //Reviews = model.Reviews,
             };
