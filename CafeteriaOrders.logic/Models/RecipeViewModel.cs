@@ -4,10 +4,11 @@ using System.Text;
 
 namespace CafeteriaOrders.logic.Models
 {
-    public class CartViewModel
+    public class RecipeViewModel
     {
         public int id { get; set; }
-        public ICollection<CartItemViewModel> cartItems { get; set; }
-        public decimal totalPrice { get; set; }
+        public int mealId { get; set; }
+        public string ingredients { get; set; }
+        public string type { get; set; }
     }
 }

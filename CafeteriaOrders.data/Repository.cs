@@ -37,7 +37,7 @@ namespace CafeteriaOrders.data
             dbcontext.Set<TEntity>().Add(entity);
         }
 
-        protected  virtual void uodate(TEntity entity)
+        protected  virtual void update(TEntity entity)
         {
             dbcontext.Entry<TEntity>(entity).State = EntityState.Modified;
         }
