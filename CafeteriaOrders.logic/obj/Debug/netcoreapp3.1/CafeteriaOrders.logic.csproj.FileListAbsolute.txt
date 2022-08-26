@@ -11,3 +11,6 @@ C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\obj\Debug\net
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.json
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.dev.json
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache
+C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CopyComplete

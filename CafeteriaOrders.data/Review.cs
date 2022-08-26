@@ -18,6 +18,9 @@ namespace CafeteriaOrders.data
 
         // target rev (Comment & rate)
         public string comment { get; set; }
+
+        [Required]
+        [Range(0, 5, ErrorMessage = "Please select number between 1 and 5")]
         public int rate { get; set; }
 
     }
