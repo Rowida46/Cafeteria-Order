@@ -14,7 +14,11 @@ namespace CafeteriaOrders.logic.Models
         public Categories category { get; set; }
         public decimal price { get; set; }
         public int numberofUnits { get; set; }
-         public RecipeViewModel recipe { get; set; } 
-         public ICollection<ReviewViewModel> Reviews { get; set; }
+
+        /* Working on the model inside -> 
+         *Views Only for visualization...
+         **/
+        public Recipe? recipe { get; set; } 
+        public ICollection<Review>? Reviews { get; set; }
     }
 }

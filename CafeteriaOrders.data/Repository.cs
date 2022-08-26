@@ -10,38 +10,36 @@ namespace CafeteriaOrders.data
 
     public class Repository<TEntity> where TEntity : class
     {
-        private readonly Context dbcontext; 
-        public Repository(Context dbcontext) // add dbcontext in UOW.cs
+        private readonly Context dbcontext;
+
+        public Repository(Context context)
         {
-            dbcontext = dbcontext;
+            dbcontext = context;
         }
 
-        public virtual IQueryable<TEntity> AsQuarable()
+        
+        protected virtual IQueryable<TEntity> AsQueryable()
         {
             /* An IQueryable that represents the input sequence.
-             * or converting input list elements to IQueryable<T
-            */
+            * or converting input list elements to IQueryable<T
+           */
             /*Ref Of .dbcontxt.Set
              Creates a DbSet<TEntity> that can be used to query and 
             save instances of TEntity.*/
-
             return dbcontext.Set<TEntity>();
         }
-        protected virtual void remove(TEntity entity)
+
+        protected virtual void delete(TEntity entity)
         {
             dbcontext.Set<TEntity>().Remove(entity);
         }
-
-        protected virtual void add(TEntity entity)
+        protected virtual void insert(TEntity entity)
         {
             dbcontext.Set<TEntity>().Add(entity);
         }
-
-        protected  virtual void update(TEntity entity)
+        protected virtual void update(TEntity entity)
         {
-            dbcontext.Entry<TEntity>(entity).State = EntityState.Modified;
+            dbcontext.Entry(entity).State = EntityState.Modified;
         }
-
-
     }
 }

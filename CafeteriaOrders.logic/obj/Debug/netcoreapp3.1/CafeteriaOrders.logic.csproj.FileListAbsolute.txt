@@ -14,3 +14,19 @@ C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\obj\Debug\net
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
 C:\Users\Master\source\repos\Cafeteria Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CopyComplete
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.deps.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.dev.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.AssemblyReference.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfoInputs.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfo.cs
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CoreCompileInputs.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CopyComplete
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache

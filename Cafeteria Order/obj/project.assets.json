@@ -1586,6 +1586,20 @@
         "runtime": {
           "bin/placeholder/CafeteriaOrders.data.dll": {}
         }
+      },
+      "CafeteriaOrders.logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/CafeteriaOrders.logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CafeteriaOrders.logic.dll": {}
+        }
       }
     }
   },
@@ -5928,11 +5942,17 @@
       "type": "project",
       "path": "../CafeteriaOrders.data/CafeteriaOrders.data.csproj",
       "msbuildProject": "../CafeteriaOrders.data/CafeteriaOrders.data.csproj"
+    },
+    "CafeteriaOrders.logic/1.0.0": {
+      "type": "project",
+      "path": "../CafeteriaOrders.logic/CafeteriaOrders.logic.csproj",
+      "msbuildProject": "../CafeteriaOrders.logic/CafeteriaOrders.logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "CafeteriaOrders.data >= 1.0.0",
+      "CafeteriaOrders.logic >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17"
     ]
@@ -5943,11 +5963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Master\\source\\repos\\Cafeteria Order\\Cafeteria Order\\Cafeteria Order.csproj",
+      "projectUniqueName": "D:\\Eva\\Cafeteria Order\\Cafeteria Order.csproj",
       "projectName": "Cafeteria Order",
-      "projectPath": "C:\\Users\\Master\\source\\repos\\Cafeteria Order\\Cafeteria Order\\Cafeteria Order.csproj",
+      "projectPath": "D:\\Eva\\Cafeteria Order\\Cafeteria Order.csproj",
       "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Master\\source\\repos\\Cafeteria Order\\Cafeteria Order\\obj\\",
+      "outputPath": "D:\\Eva\\Cafeteria Order\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5964,8 +5984,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Master\\source\\repos\\Cafeteria Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-              "projectPath": "C:\\Users\\Master\\source\\repos\\Cafeteria Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+            "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+              "projectPath": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+            },
+            "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+              "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
             }
           }
         }

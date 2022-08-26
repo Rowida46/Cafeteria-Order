@@ -16,8 +16,4 @@
     <ProjectReference Include="..\CafeteriaOrders.data\CafeteriaOrders.data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
-  </ItemGroup>
-
 </Project>
