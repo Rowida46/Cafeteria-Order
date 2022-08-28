@@ -38,14 +38,25 @@ namespace CafeteriaOrders.logic.DataAccess
             return review;
         }
 
-        public IEnumerable<ReviewViewModel> details(int id)
+
+        public ReviewViewModel details(int id)
         {
             return AsQueryable().Where(rv => rv.id == id).Select(rev => new ReviewViewModel
             {
                 MealId = rev.MealId,
                 rate = rev.rate,
                 comment = rev.comment
-            });
+            }).FirstOrDefault();
+        }
+      
+        public IEnumerable<ReviewViewModel> getByMealId(int MealId)
+        {
+            return AsQueryable().Where(rv => rv.MealId == MealId).Select(rev => new ReviewViewModel
+            {
+                MealId = rev.MealId,
+                rate = rev.rate,
+                comment = rev.comment
+            }).ToList();
         }
 
         public Review remove(int id)

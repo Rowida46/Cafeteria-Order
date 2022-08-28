@@ -17,6 +17,7 @@ namespace Cafeteria_Order.Controllers
             uof = new UnitOfWork(context);
         }
 
+
         [HttpGet]
         public IEnumerable<MealsViewModel> Get() // get all lst
         {
@@ -27,10 +28,16 @@ namespace Cafeteria_Order.Controllers
         public MealsViewModel Details(int id)
         {
             var meal = uof.meal.details(id);
-            uof.Commit();
             return meal;
         } // get spedific
 
+        [HttpGet] 
+        public IEnumerable<MealsViewModel> HighestRate()
+        {
+           //mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
+            var top7 = uof.meal.viewHighestmeals();
+            return top7;
+        }
         [HttpPost]
         public Meals Add(MealsViewModel model)
         {
@@ -48,7 +55,7 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpPost]
-        public Meals Update(MealsViewModel mode)
+        public Meals Edit(MealsViewModel mode)
         {
             var meal = uof.meal.edit(mode);
             uof.Commit();

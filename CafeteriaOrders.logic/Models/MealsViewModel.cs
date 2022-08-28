@@ -20,5 +20,7 @@ namespace CafeteriaOrders.logic.Models
          **/
         public Recipe? recipe { get; set; } 
         public ICollection<Review>? Reviews { get; set; }
+
+        
     }
 }

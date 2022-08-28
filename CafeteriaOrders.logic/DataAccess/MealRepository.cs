@@ -15,17 +15,38 @@ namespace CafeteriaOrders.logic.DataAccess
             this.context = context;
         }
 
-        public IEnumerable<MealsViewModel> get(){
+        public IEnumerable<MealsViewModel> get(){ // we need to add the list of reviews ..
             return AsQueryable().Select(meal => new MealsViewModel
             {
                 name = meal.name,
                 image = meal.image,
                 price  = meal.price,
                 category = meal.category,
-                numberofUnits = meal.numberofUnits,
+                OverAllRate  = meal.OverAllRate,
+                Reviews = meal.Reviews,
+                //numberofUnits = meal.numberofUnits,
                 Id = meal.Id
+                /*
+                List of reviews
+                 */
+            });
+        }
+
+        public IEnumerable<MealsViewModel> viewHighestmeals()
+        {
+            //return items.OrderByDescending(x => x.OverAllRate);
+            var meals = AsQueryable().Select(meal => new MealsViewModel
+                {
+                    name = meal.name,
+                    image = meal.image,
+                    price = meal.price,
+                    category = meal.category,
+                    Id = meal.Id,
+                    OverAllRate= meal.OverAllRate
 
             });
+            
+            return meals.OrderByDescending(x => x.OverAllRate).Take(7);
         }
 
         public MealsViewModel details(int id)
@@ -51,8 +72,8 @@ namespace CafeteriaOrders.logic.DataAccess
             category = model.category,
             price = model.price,
             OverAllRate = model.OverAllRate,
-            //recipe = (Recipe)model.recipe,
-            //Reviews = (Review)model.Reviews
+            recipe = model.recipe,
+            Reviews = model.Reviews
             };
             insert(tmp);
             return tmp;
@@ -62,6 +83,7 @@ namespace CafeteriaOrders.logic.DataAccess
         {
             var tmp = new Meals
             {
+                Id = model.Id,
                 name = model.name,
                 image = model.image,
                 numberofUnits = model.numberofUnits,
@@ -71,7 +93,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 recipe = model.recipe,
                 Reviews = model.Reviews 
             };
-
+            Update(tmp);
             return tmp;
         }
         
