@@ -1,0 +1,13 @@
+D:\Eva\CafeteriaOrders.data\bin\Release\netcoreapp3.1\CafeteriaOrders.data.deps.json
+D:\Eva\CafeteriaOrders.data\bin\Release\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.json
+D:\Eva\CafeteriaOrders.data\bin\Release\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.dev.json
+D:\Eva\CafeteriaOrders.data\bin\Release\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva\CafeteriaOrders.data\bin\Release\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.csproj.AssemblyReference.cache
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfoInputs.cache
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfo.cs
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.csproj.CoreCompileInputs.cache
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva\CafeteriaOrders.data\obj\Release\netcoreapp3.1\CafeteriaOrders.data.genruntimeconfig.cache

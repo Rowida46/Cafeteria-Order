@@ -16,6 +16,13 @@
   <ItemGroup>
     <ProjectReference Include="..\CafeteriaOrders.data\CafeteriaOrders.data.csproj" />
     <ProjectReference Include="..\CafeteriaOrders.logic\CafeteriaOrders.logic.csproj" />
+    <ProjectReference Include="..\Service\CafeteriaOrders.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 

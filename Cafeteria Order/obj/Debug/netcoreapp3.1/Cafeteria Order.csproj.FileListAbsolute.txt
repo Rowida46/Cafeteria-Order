@@ -137,4 +137,6 @@ D:\Eva\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.dll
 D:\Eva\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.pdb
 D:\Eva\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.genruntimeconfig.cache
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb

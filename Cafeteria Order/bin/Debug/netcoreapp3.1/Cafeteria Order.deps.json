@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Cafeteria Order/1.0.0": {
         "dependencies": {
+          "CafeteriaOrders.Service": "1.0.0",
           "CafeteriaOrders.data": "1.0.0",
           "CafeteriaOrders.logic": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
@@ -1484,6 +1485,18 @@
         },
         "compile": {
           "CafeteriaOrders.logic.dll": {}
+        }
+      },
+      "CafeteriaOrders.Service/1.0.0": {
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "CafeteriaOrders.logic": "1.0.0"
+        },
+        "runtime": {
+          "CafeteriaOrders.Service.dll": {}
+        },
+        "compile": {
+          "CafeteriaOrders.Service.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3803,6 +3816,11 @@
       "sha512": ""
     },
     "CafeteriaOrders.logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CafeteriaOrders.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

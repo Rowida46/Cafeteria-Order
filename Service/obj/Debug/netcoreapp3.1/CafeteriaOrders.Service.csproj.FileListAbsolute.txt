@@ -1,0 +1,15 @@
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.deps.json
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.AssemblyReference.cache
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfoInputs.cache
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfo.cs
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CoreCompileInputs.cache
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb

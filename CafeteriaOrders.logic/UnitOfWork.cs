@@ -27,5 +27,12 @@ namespace CafeteriaOrders.logic
         public ReviewRepository review => Review ?? (Review = new ReviewRepository(dbcontext));
         #endregion
 
+
+        #region Cart
+        CartRepository Cart;
+        public CartRepository carts => Cart ?? (Cart = new CartRepository(dbcontext));
+        #endregion
+
+
     }
 }

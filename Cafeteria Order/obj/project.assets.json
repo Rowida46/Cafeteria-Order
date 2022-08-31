@@ -1600,6 +1600,20 @@
         "runtime": {
           "bin/placeholder/CafeteriaOrders.logic.dll": {}
         }
+      },
+      "CafeteriaOrders.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "CafeteriaOrders.logic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CafeteriaOrders.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CafeteriaOrders.Service.dll": {}
+        }
       }
     }
   },
@@ -5947,10 +5961,16 @@
       "type": "project",
       "path": "../CafeteriaOrders.logic/CafeteriaOrders.logic.csproj",
       "msbuildProject": "../CafeteriaOrders.logic/CafeteriaOrders.logic.csproj"
+    },
+    "CafeteriaOrders.Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/CafeteriaOrders.Service.csproj",
+      "msbuildProject": "../Service/CafeteriaOrders.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CafeteriaOrders.Service >= 1.0.0",
       "CafeteriaOrders.data >= 1.0.0",
       "CafeteriaOrders.logic >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
@@ -5989,6 +6009,9 @@
             },
             "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
               "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+            },
+            "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj": {
+              "projectPath": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj"
             }
           }
         }

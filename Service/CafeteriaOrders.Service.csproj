@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CafeteriaOrders.data\CafeteriaOrders.data.csproj" />
+    <ProjectReference Include="..\CafeteriaOrders.logic\CafeteriaOrders.logic.csproj" />
+  </ItemGroup>
+
+</Project>

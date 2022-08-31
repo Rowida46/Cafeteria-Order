@@ -16,8 +16,8 @@ namespace CafeteriaOrders.data
         public Categories category { get; set; }
         public decimal price { get; set; }
         public int numberofUnits { get; set; }  
-        public Recipe? recipe { get; set; } // that include further details
-        public ICollection<Review>? Reviews { get; set; }
+        public virtual Recipe? recipe { get; set; } // that include further details
+        public virtual ICollection<Review>? Reviews { get; set; }
 
     }
 }

@@ -33,6 +33,9 @@
               },
               "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
                 "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+              },
+              "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj": {
+                "projectPath": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj"
               }
             }
           }
@@ -211,6 +214,67 @@
               "version": "[5.0.17, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj",
+        "projectName": "CafeteriaOrders.Service",
+        "projectPath": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "D:\\Eva\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+                "projectPath": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+              },
+              "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+                "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",

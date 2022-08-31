@@ -10,7 +10,7 @@ namespace CafeteriaOrders.data
         [Key]
         public int id { get; set; }
 
-        public ICollection<CartItem> cartItems { get; set; }
+        public  virtual ICollection<CartItem> cartItems { get; set; }
 
         public decimal totalPrice { get; set; }
 

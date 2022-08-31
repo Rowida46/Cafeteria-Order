@@ -1,0 +1,16 @@
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.deps.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.runtimeconfig.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.runtimeconfig.dev.json
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.dll
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.pdb
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.csproj.AssemblyReference.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.AssemblyInfoInputs.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.AssemblyInfo.cs
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.csproj.CoreCompileInputs.cache
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.csproj.CopyComplete
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.dll
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.pdb
+D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.DTOS.genruntimeconfig.cache

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2HdRMNx4gE+qdtZfsJwmuAAAAAACAAAAAAAQZgAAAAEAACAAAAB0m6kK2aO1dzSNJDKay5hiN3vwT5bQwcknLgkdRsExLgAAAAAOgAAAAAIAACAAAABSAAwbowhc8k0pBrZI1Tu4AEKyIoMoXhp7QCWO3g6wqCAAAAAxNGMt+Ij0B/4dcViGgkNJ9P2AOMwt2/oejdIZ4qq44EAAAACFHeZPS3MEG0fxOt+1X5KOv5EzwJBZuoAIkPKOI9knT6bGxPtVBqkinKXFyGqlrTqdRLyTaZj0nLqFTkM1fGPa</EncryptedPassword>
+    <History>True|2022-08-30T15:30:56.1651470Z;True|2022-08-30T16:17:22.6109743+02:00;True|2022-08-30T15:50:29.6519622+02:00;True|2022-08-30T02:51:16.6058610+02:00;True|2022-08-29T16:05:14.6526302+02:00;True|2022-08-29T15:57:31.7238181+02:00;True|2022-08-29T15:55:12.0229989+02:00;True|2022-08-29T15:50:14.9013996+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5107.site4now.net%3bInitial Catalog=db_a8c2bc_cafeteriaorder%3bUser Id=db_a8c2bc_cafeteriaorder_admin%3bPassword=dana46%40AA</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="CafeteriaOrders.data.Context">
+      <Value>Data Source=SQL5107.site4now.net%3bInitial Catalog=db_a8c2bc_cafeteriaorder%3bUser Id=db_a8c2bc_cafeteriaorder_admin%3bPassword=dana46%40AA</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

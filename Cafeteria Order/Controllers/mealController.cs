@@ -1,9 +1,12 @@
 ﻿using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
+using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
+using CafeteriaOrders.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Cafeteria_Order.Controllers
 {
@@ -11,55 +14,73 @@ namespace Cafeteria_Order.Controllers
     [ApiController]
     public class MealController : ControllerBase
     {
-        UnitOfWork uof;
-        public MealController (Context context)
+        private readonly ImealServices _mealService;
+
+        public MealController(ImealServices mealService)
         {
-            uof = new UnitOfWork(context);
+            _mealService = mealService;
+        }
+        [HttpGet]
+        public IActionResult test()
+        {
+            return Ok("Testing Ok test");
+        } 
+        [HttpGet]
+        public Task<IEnumerable<GetMealDto>> Get() // get all lst
+        {
+            return _mealService.Get();
+
         }
 
-
         [HttpGet]
-        public IEnumerable<MealsViewModel> Get() // get all lst
+        public async Task<GetMealDto> Details(int id)
         {
-            return uof.meal.get();
-        }
-
-        [HttpGet]
-        public MealsViewModel Details(int id)
-        {
+            return await _mealService.Details(id);
+            /*
             var meal = uof.meal.details(id);
             return meal;
+            */
         } // get spedific
 
         [HttpGet] 
-        public IEnumerable<MealsViewModel> HighestRate()
+        public  async Task<IEnumerable<GetMealDto>> HighestRate()
         {
-           //mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
+            return await _mealService.HighestRate();
+            /*//mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
             var top7 = uof.meal.viewHighestmeals();
             return top7;
+            */
         }
         [HttpPost]
-        public Meals Add(MealsViewModel model)
+        public async Task<Meals> Add(AddMealDto model)
         {
+            return await _mealService.Add(model);
+            /*
             var meal =  uof.meal.add(model);
             uof.Commit();
             return meal;
+            */
         }
 
         [HttpGet]
-        public Meals Delete(int id)
+        public async Task<Meals> Delete(int id)
         {
-            var meal = uof.meal.remove(id);
+            return await _mealService.Delete(id);
+            /*var meal = uof.meal.remove(id);
             uof.Commit();
             return meal;
+            */
         }
 
         [HttpPost]
-        public Meals Edit(MealsViewModel mode)
+        public async Task<Meals> Edit(GetMealDto mode)
         {
+            return await _mealService.Edit(mode);
+            /*
             var meal = uof.meal.edit(mode);
             uof.Commit();
             return meal;
+            */
         }
     }
 }

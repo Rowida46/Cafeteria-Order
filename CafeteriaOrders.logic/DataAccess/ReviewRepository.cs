@@ -1,4 +1,5 @@
 ﻿using CafeteriaOrders.data;
+using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,9 @@ namespace CafeteriaOrders.logic.DataAccess
             Context = context;
         }
 
-        public IEnumerable<ReviewViewModel> get()
+        public IEnumerable<GetReviewDtos> get()
         {
-            return AsQueryable().Select(rev => new ReviewViewModel
+            return AsQueryable().Select(rev => new GetReviewDtos
             {
                 MealId = rev.MealId,
                 comment = rev.comment,
@@ -26,7 +27,7 @@ namespace CafeteriaOrders.logic.DataAccess
             });
         }
 
-        public Review add(ReviewViewModel mode)
+        public Review add(AddReviewDtos mode)
         {
             var review = new Review
             {
@@ -39,9 +40,9 @@ namespace CafeteriaOrders.logic.DataAccess
         }
 
 
-        public ReviewViewModel details(int id)
+        public GetReviewDtos details(int id)
         {
-            return AsQueryable().Where(rv => rv.id == id).Select(rev => new ReviewViewModel
+            return AsQueryable().Where(rv => rv.id == id).Select(rev => new GetReviewDtos
             {
                 MealId = rev.MealId,
                 rate = rev.rate,
@@ -49,9 +50,9 @@ namespace CafeteriaOrders.logic.DataAccess
             }).FirstOrDefault();
         }
       
-        public IEnumerable<ReviewViewModel> getByMealId(int MealId)
+        public IEnumerable<GetReviewDtos> getByMealId(int MealId)
         {
-            return AsQueryable().Where(rv => rv.MealId == MealId).Select(rev => new ReviewViewModel
+            return AsQueryable().Where(rv => rv.MealId == MealId).Select(rev => new GetReviewDtos
             {
                 MealId = rev.MealId,
                 rate = rev.rate,
@@ -66,7 +67,7 @@ namespace CafeteriaOrders.logic.DataAccess
             return tmp;
         }
 
-        public Review edit(ReviewViewModel model)
+        public Review edit(GetReviewDtos model)
         {
             var rev = new Review
             {

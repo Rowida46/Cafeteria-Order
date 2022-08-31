@@ -1,4 +1,5 @@
 ﻿using CafeteriaOrders.data;
+using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,8 @@ namespace CafeteriaOrders.logic.DataAccess
             this.context = context;
         }
 
-        public IEnumerable<MealsViewModel> get(){ // we need to add the list of reviews ..
-            return AsQueryable().Select(meal => new MealsViewModel
+        public IEnumerable<GetMealDto> get(){ // we need to add the list of reviews ..
+            return AsQueryable().Select(meal => new GetMealDto
             {
                 name = meal.name,
                 image = meal.image,
@@ -32,10 +33,10 @@ namespace CafeteriaOrders.logic.DataAccess
             });
         }
 
-        public IEnumerable<MealsViewModel> viewHighestmeals()
+        public IEnumerable<GetMealDto> viewHighestmeals()
         {
             //return items.OrderByDescending(x => x.OverAllRate);
-            var meals = AsQueryable().Select(meal => new MealsViewModel
+            var meals = AsQueryable().Select(meal => new GetMealDto
                 {
                     name = meal.name,
                     image = meal.image,
@@ -49,9 +50,9 @@ namespace CafeteriaOrders.logic.DataAccess
             return meals.OrderByDescending(x => x.OverAllRate).Take(7);
         }
 
-        public MealsViewModel details(int id)
+        public GetMealDto details(int id)
         {
-            return AsQueryable().Where(ml => ml.Id == id).Select(meal => new MealsViewModel
+            return AsQueryable().Where(ml => ml.Id == id).Select(meal => new GetMealDto
             {
                 name = meal.name,
                 image = meal.image,
@@ -63,7 +64,7 @@ namespace CafeteriaOrders.logic.DataAccess
             }).FirstOrDefault();
         }
 
-        public Meals add(MealsViewModel model)
+        public Meals add(AddMealDto model)
         {
             var tmp = new Meals { 
             name = model.name,
@@ -79,7 +80,7 @@ namespace CafeteriaOrders.logic.DataAccess
             return tmp;
         }
 
-        public Meals edit(MealsViewModel model)
+        public Meals edit(GetMealDto model)
         {
             var tmp = new Meals
             {
@@ -90,7 +91,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 category = model.category,
                 price = model.price,
                 OverAllRate = model.OverAllRate,
-                recipe = model.recipe,
+                //recipe = model.recipe,
                 Reviews = model.Reviews 
             };
             Update(tmp);

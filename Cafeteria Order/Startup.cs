@@ -1,4 +1,6 @@
 using CafeteriaOrders.data;
+using CafeteriaOrders.Service;
+using CafeteriaOrders.Service.Review;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,10 @@ namespace Cafeteria_Order
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
+            // adding service layer...
+            services.AddScoped<IReviewService, ReviewServices>();
+            services.AddScoped<ImealServices, MealServices>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
