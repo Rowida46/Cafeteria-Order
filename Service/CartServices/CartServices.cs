@@ -1,5 +1,6 @@
 ﻿using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
+using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.DtosModels.Carts;
 using CafeteriaOrders.logic.Models;
 using System;
@@ -18,13 +19,14 @@ namespace CafeteriaOrders.Service.CartServices
             uof = new UnitOfWork(context);
         }
         
-        public async Task<Cart> Add(AddCartDtos model)
+        public async Task<AddCartDtos> Add(AddCartDtos model)
         {
             var cart = uof.carts.add(model);
             uof.Commit();
-            return cart;
+            return model;
         }
 
+                                                                                                                                                                                                                                                                
         public  async Task<Cart> Delete(int id)
         {
             var meal = uof.carts.remove(id);
@@ -47,7 +49,7 @@ namespace CafeteriaOrders.Service.CartServices
             return uof.carts.get();
         }
 
-        public async Task<IEnumerable<CartItemViewModel>> GetCartItems()
+        public async Task<IEnumerable<CartItemDtos>> GetCartItems()
         {
             throw new NotImplementedException();
         }
@@ -55,6 +57,49 @@ namespace CafeteriaOrders.Service.CartServices
         public async Task<decimal> GetTotalPrice()
         {
             throw new NotImplementedException();
+        }
+        public  decimal checkValidItem(CartItem model) {
+            /*
+             1-  get meal details by id
+             2- check quantity 
+             */
+            var meal = uof.meal.details(model.mealId);
+            decimal totalPrice =0;
+            if(meal.numberofUnits == model.quantity)
+            {
+                totalPrice = model.quantity * meal.price;
+                return totalPrice;
+            }
+
+            return totalPrice;
+        }
+
+        public async Task<ServiceResponse<GetCartDtos>> checkout(List<CartItem> model)
+        {
+            var service = new ServiceResponse<GetCartDtos>();
+            string massage= "";
+             var cart = new GetCartDtos();
+            decimal totalprice = 0;
+            foreach (var item in model)
+            {
+                decimal price = checkValidItem(item);
+                if (price.Equals(0.0))
+                {
+                    cart.cartItems.Add(item);
+                   // listValid.Add(item);
+                    totalprice += price;
+                }
+                else
+                {
+                    var meal = uof.meal.details(item.mealId);
+                    massage += meal.name + " and ";
+                }
+            }
+            cart.totalPrice = totalprice;
+            service.Data = cart;
+            service.Message = massage+"this items is not vaild";
+
+            return service;
         }
     }
 }

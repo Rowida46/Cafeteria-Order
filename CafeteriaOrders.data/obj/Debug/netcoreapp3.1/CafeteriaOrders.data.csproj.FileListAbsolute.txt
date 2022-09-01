@@ -24,3 +24,16 @@ D:\Eva\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.csproj.
 D:\Eva\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
 D:\Eva\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
 D:\Eva\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.genruntimeconfig.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.deps.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.dev.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.csproj.AssemblyReference.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfoInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfo.cs
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.csproj.CoreCompileInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.genruntimeconfig.cache

@@ -15,8 +15,8 @@ namespace CafeteriaOrders.Service.Review
         Task<GetReviewDtos> Details(int id);
         Task<IEnumerable<GetReviewDtos>>  MealsReview(int MealId); // retreive all meals by its id
         decimal CalcAvrg(List<GetReviewDtos> lst);
-        Task<Meals> updateAvrgRate(data.Review review);
-        Task<data.Review> Add(AddReviewDtos model);
+        Task<Meals> updateAvrgRate(AddReviewDtos review);
+        Task<AddReviewDtos> Add(AddReviewDtos model);
         Task<data.Review> Update(GetReviewDtos model);
         Task<data.Review> Delete(int id);
     }

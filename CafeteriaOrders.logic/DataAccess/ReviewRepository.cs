@@ -27,16 +27,16 @@ namespace CafeteriaOrders.logic.DataAccess
             });
         }
 
-        public Review add(AddReviewDtos mode)
+        public AddReviewDtos add(AddReviewDtos model)
         {
             var review = new Review
             {
-                MealId = mode.MealId,
-                comment = mode.comment,
-                rate = mode.rate
+                MealId = model.MealId,
+                comment = model.comment,
+                rate = model.rate
             };
             insert(review);
-            return review;
+            return model ;
         }
 
 

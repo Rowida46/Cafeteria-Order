@@ -16,7 +16,7 @@ namespace CafeteriaOrders.logic.DataAccess
             this.context = context;
         }
 
-        public Cart add(AddCartDtos model)
+        public AddCartDtos add(AddCartDtos model)
         {
             var tmp = new Cart
             {
@@ -24,7 +24,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 totalPrice = model.totalPrice,
             };
             insert(tmp);
-            return tmp;
+            return model;
         }
 
         public IEnumerable<GetCartDtos> get()

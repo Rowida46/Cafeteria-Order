@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Service",
+    "\\Service\\CartServices"
   ],
-  "SelectedNode": "\\Cafeteria Order.sln",
+  "SelectedNode": "\\Service\\CartServices\\ICartService.cs",
   "PreviewInSolutionExplorer": false
 }

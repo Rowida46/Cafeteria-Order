@@ -53,7 +53,7 @@ namespace CafeteriaOrders.Service.Review
         }
 
 
-        public async Task<Meals> updateAvrgRate(CafeteriaOrders.data.Review review)
+        public async Task<Meals> updateAvrgRate(AddReviewDtos review)
         {
             //uof.Commit();
             /* adding logic of, whenever a new review about a specific meal, we need ..
@@ -77,7 +77,7 @@ namespace CafeteriaOrders.Service.Review
             return updatedMeal;
         }
 
-        public async Task<CafeteriaOrders.data.Review> Add(AddReviewDtos model)
+        public async Task<AddReviewDtos> Add(AddReviewDtos model)
         {
             var review = uof.review.add(model);
             uof.Commit();

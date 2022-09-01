@@ -1,5 +1,6 @@
 ﻿using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
+using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
 using CafeteriaOrders.Service;
 using CafeteriaOrders.Service.Review;
@@ -49,7 +50,7 @@ namespace Cafeteria_Order.Controllers
 
         [HttpPost]
        
-        public async Task<Meals> updateAvrgRate(Review review)
+        public async Task<Meals> updateAvrgRate(AddReviewDtos review)
         {
             
             //uof.Commit();
@@ -67,7 +68,7 @@ namespace Cafeteria_Order.Controllers
              return await _reviewService.updateAvrgRate(review);
         }
 
-        public async Task<Review> Add(GetReviewDtos model)
+       public async Task<AddReviewDtos> Add(AddReviewDtos model)
         {
             return await _reviewService.Add(model);
             /*

@@ -13,3 +13,18 @@ D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CoreCompil
 D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
 D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
 D:\Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.deps.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.AssemblyReference.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfoInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfo.cs
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CoreCompileInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb

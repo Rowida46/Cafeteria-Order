@@ -30,3 +30,19 @@ D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.cspro
 D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
 D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
 D:\Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.deps.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.dev.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.AssemblyReference.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfoInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfo.cs
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CoreCompileInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CopyComplete
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache
