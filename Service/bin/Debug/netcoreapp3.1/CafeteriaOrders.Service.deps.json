@@ -9,6 +9,7 @@
       "CafeteriaOrders.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "CafeteriaOrders.UnitOfWork": "1.0.0",
           "CafeteriaOrders.data": "1.0.0",
           "CafeteriaOrders.logic": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0"
@@ -1419,6 +1420,15 @@
         "runtime": {
           "CafeteriaOrders.logic.dll": {}
         }
+      },
+      "CafeteriaOrders.UnitOfWork/1.0.0": {
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "CafeteriaOrders.logic": "1.0.0"
+        },
+        "runtime": {
+          "CafeteriaOrders.UnitOfWork.dll": {}
+        }
       }
     }
   },
@@ -2295,6 +2305,11 @@
       "sha512": ""
     },
     "CafeteriaOrders.logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CafeteriaOrders.UnitOfWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

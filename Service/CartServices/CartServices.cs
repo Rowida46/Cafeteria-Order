@@ -67,6 +67,7 @@ namespace CafeteriaOrders.Service.CartServices
              1-  get meal details by id
              2- check quantity 
              */
+            // Meals meal = uof.meal.details(model.mealId);
             var meal = uof.meal.details(model.mealId);
             decimal totalPrice =0;
             if(meal.numberofUnits == model.quantity)

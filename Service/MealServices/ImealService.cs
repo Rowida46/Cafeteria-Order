@@ -12,12 +12,12 @@ namespace CafeteriaOrders.Service
     {
 
         Task<IEnumerable<GetMealDto>> Get();
-        Task<GetMealDto> Details(int id);
+        Task<Meals> Details(int id);
         Task<IEnumerable<GetMealDto>> HighestRate();
         Task<Meals> Add(AddMealDto model);
 
         Task<Meals> Delete(int id);
+        Task<Meals> Edit(Meals mode);
 
-        Task<Meals> Edit(GetMealDto mode);
     }
 }

@@ -23,7 +23,7 @@ namespace CafeteriaOrders.Service
         {
             return uof.meal.get();
         }
-        public async Task<GetMealDto> Details(int id)
+        public async Task<Meals> Details(int id)
         {
             var meal = uof.meal.details(id);
             return meal;
@@ -49,11 +49,11 @@ namespace CafeteriaOrders.Service
             return meal;
         }
 
-        public async Task<Meals> Edit(GetMealDto mode)
+        public async Task<Meals> Edit(Meals model)
         {
-            var meal = uof.meal.edit(mode);
+            var meal = uof.meal.edit(model);
             uof.Commit();
-            return meal;
+            return  meal;
         }
     }  
 }

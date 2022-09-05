@@ -33,7 +33,7 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpGet]
-        public async Task<GetMealDto> Details(int id)
+        public async Task<Meals>Details(int id)
         {
             return await _mealService.Details(id);
             /*
@@ -73,7 +73,7 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpPost]
-        public async Task<Meals> Edit(GetMealDto mode)
+        public async Task<Meals> Edit(Meals mode)
         {
             return await _mealService.Edit(mode);
             /*

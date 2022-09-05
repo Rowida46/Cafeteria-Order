@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+1F16pCJGxbJmowoV6lZvXPOQckFx7y/2C9PGNnN4fWiSWDb6qvROlARP7TE7OFFtp7HHRlZi6mUDS3++iHJA==",
+  "dgSpecHash": "5cuys5ZPO8jpGY82vWnnbKyuds+Ba3ayr4ttwg/6wltQdI2sxPLahJS72LliC/YAC1BUdeaQmGYTFNTDleiL9w==",
   "success": true,
-  "projectFilePath": "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj",
+  "projectFilePath": "D:\\Eva_Rowida\\Service\\CafeteriaOrders.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Master\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Master\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
