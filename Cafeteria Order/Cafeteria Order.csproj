@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CafeteriaOrders.data\CafeteriaOrders.data.csproj" />
     <ProjectReference Include="..\CafeteriaOrders.logic\CafeteriaOrders.logic.csproj" />
+    <ProjectReference Include="..\CafeteriaOrders.UnitOfWork\CafeteriaOrders.UnitOfWork.csproj" />
     <ProjectReference Include="..\Service\CafeteriaOrders.Service.csproj" />
   </ItemGroup>
 

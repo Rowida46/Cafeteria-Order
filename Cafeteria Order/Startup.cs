@@ -2,6 +2,7 @@ using CafeteriaOrders.data;
 using CafeteriaOrders.Service;
 using CafeteriaOrders.Service.CartServices;
 using CafeteriaOrders.Service.Review;
+using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +44,12 @@ namespace Cafeteria_Order
             services.AddScoped<IReviewService, ReviewServices>();
             services.AddScoped<ImealServices, MealServices>();
             services.AddScoped<ICartService, CartServices>();
+
+            /* Unit of work is created we need to update the startup class,
+            ** so it will be injected in our dependency injection framework
+            */
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             /* to handle json parsing for -> list of cartitem within each cart ..*/
             services.AddControllers().AddNewtonsoftJson(x =>

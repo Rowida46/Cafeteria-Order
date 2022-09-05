@@ -12,10 +12,10 @@ namespace CafeteriaOrders.Service.Review
 {
     public class ReviewServices : IReviewService
     {
-        UnitOfWork uof;
+        _unitofwork uof;
         public ReviewServices(Context context)
         {
-            uof = new UnitOfWork(context);
+            uof = new _unitofwork(context);
         }
 
         public async Task<IEnumerable<GetReviewDtos>> Get()

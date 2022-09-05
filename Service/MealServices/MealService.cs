@@ -13,10 +13,10 @@ namespace CafeteriaOrders.Service
     public class MealServices : ImealServices
     {
         Context context;
-        UnitOfWork uof;
+        _unitofwork uof;
         public MealServices(Context context)
         {
-            uof = new UnitOfWork(context);
+            uof = new _unitofwork(context);
         }
 
         public async Task<IEnumerable<GetMealDto>> Get() // get all lst

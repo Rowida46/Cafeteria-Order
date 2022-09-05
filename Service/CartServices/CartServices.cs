@@ -3,6 +3,7 @@ using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.DtosModels.Carts;
 using CafeteriaOrders.logic.Models;
+using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,11 +14,13 @@ namespace CafeteriaOrders.Service.CartServices
     public class CartServices : ICartService
     {
         Context context;
-        UnitOfWork uof;
-
+        _unitofwork uof;
+        IUnitOfWork unitOfWork;
         public CartServices(Context context)
         {
-            uof = new UnitOfWork(context);
+            // unitOfWork = new UnitOfWork(context);
+
+            uof = new _unitofwork(context);
         }
         
         public async Task<Cart> Add(AddCartDtos model)

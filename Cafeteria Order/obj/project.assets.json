@@ -2859,6 +2859,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "CafeteriaOrders.UnitOfWork": "1.0.0",
           "CafeteriaOrders.data": "1.0.0",
           "CafeteriaOrders.logic": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0"
@@ -2868,6 +2869,20 @@
         },
         "runtime": {
           "bin/placeholder/CafeteriaOrders.Service.dll": {}
+        }
+      },
+      "CafeteriaOrders.UnitOfWork/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "CafeteriaOrders.logic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CafeteriaOrders.UnitOfWork.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CafeteriaOrders.UnitOfWork.dll": {}
         }
       }
     }
@@ -8966,11 +8981,17 @@
       "type": "project",
       "path": "../Service/CafeteriaOrders.Service.csproj",
       "msbuildProject": "../Service/CafeteriaOrders.Service.csproj"
+    },
+    "CafeteriaOrders.UnitOfWork/1.0.0": {
+      "type": "project",
+      "path": "../CafeteriaOrders.UnitOfWork/CafeteriaOrders.UnitOfWork.csproj",
+      "msbuildProject": "../CafeteriaOrders.UnitOfWork/CafeteriaOrders.UnitOfWork.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "CafeteriaOrders.Service >= 1.0.0",
+      "CafeteriaOrders.UnitOfWork >= 1.0.0",
       "CafeteriaOrders.data >= 1.0.0",
       "CafeteriaOrders.logic >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.15.0",
@@ -9012,6 +9033,9 @@
             },
             "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
               "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+            },
+            "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
+              "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj"
             },
             "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj": {
               "projectPath": "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj"
