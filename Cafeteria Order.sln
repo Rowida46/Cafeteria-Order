@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CafeteriaOrders.logic", "Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CafeteriaOrders.Service", "Service\CafeteriaOrders.Service.csproj", "{BC049D1A-F776-4841-B6AE-007988599169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeteriaOrders.UnitOfWork", "CafeteriaOrders.UnitOfWork\CafeteriaOrders.UnitOfWork.csproj", "{432D38AA-25DC-4642-9D0B-76DECC8C23E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BC049D1A-F776-4841-B6AE-007988599169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC049D1A-F776-4841-B6AE-007988599169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC049D1A-F776-4841-B6AE-007988599169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432D38AA-25DC-4642-9D0B-76DECC8C23E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432D38AA-25DC-4642-9D0B-76DECC8C23E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432D38AA-25DC-4642-9D0B-76DECC8C23E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432D38AA-25DC-4642-9D0B-76DECC8C23E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
