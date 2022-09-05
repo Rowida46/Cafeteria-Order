@@ -46,3 +46,19 @@ C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\ob
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.deps.json
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.json
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.runtimeconfig.dev.json
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Rowida_Eva\CafeteriaOrders.logic\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.AssemblyReference.cache
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfoInputs.cache
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.AssemblyInfo.cs
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CoreCompileInputs.cache
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.csproj.CopyComplete
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Rowida_Eva\CafeteriaOrders.logic\obj\Debug\netcoreapp3.1\CafeteriaOrders.logic.genruntimeconfig.cache

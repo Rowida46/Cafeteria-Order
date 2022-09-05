@@ -1,5 +1,6 @@
 using CafeteriaOrders.data;
 using CafeteriaOrders.Service;
+using CafeteriaOrders.Service.CartServices;
 using CafeteriaOrders.Service.Review;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +36,13 @@ namespace Cafeteria_Order
             // adding service layer...
             services.AddScoped<IReviewService, ReviewServices>();
             services.AddScoped<ImealServices, MealServices>();
+            services.AddScoped<ICartService, CartServices>();
+
+
+            /* to handle json parsing for -> list of cartitem within each cart ..*/
+            services.AddControllers().AddNewtonsoftJson(x =>
+             x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddApplicationInsightsTelemetry();
 
         }
 

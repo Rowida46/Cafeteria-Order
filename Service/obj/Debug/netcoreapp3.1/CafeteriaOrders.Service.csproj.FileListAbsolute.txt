@@ -28,3 +28,18 @@ C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcor
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
 C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.deps.json
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Rowida_Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.AssemblyReference.cache
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfoInputs.cache
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.AssemblyInfo.cs
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CoreCompileInputs.cache
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+D:\Rowida_Eva\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb

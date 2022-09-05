@@ -14,16 +14,17 @@ namespace CafeteriaOrders.Service.CartServices
     {
         Context context;
         UnitOfWork uof;
+
         public CartServices(Context context)
         {
             uof = new UnitOfWork(context);
         }
         
-        public async Task<AddCartDtos> Add(AddCartDtos model)
+        public async Task<Cart> Add(AddCartDtos model)
         {
-            var cart = uof.carts.add(model);
+            var crt = uof.carts.add(model);
             uof.Commit();
-            return model;
+            return crt;
         }
 
                                                                                                                                                                                                                                                                 
@@ -74,13 +75,14 @@ namespace CafeteriaOrders.Service.CartServices
             return totalPrice;
         }
 
-        public async Task<ServiceResponse<GetCartDtos>> checkout(List<CartItem> model)
+        public async Task<ServiceResponse<GetCartDtos>> checkout(AddCartDtos model)
         {
             var service = new ServiceResponse<GetCartDtos>();
             string massage= "";
              var cart = new GetCartDtos();
             decimal totalprice = 0;
-            foreach (var item in model)
+            var items = model.cartItems;
+            foreach (var item in items)
             {
                 decimal price = checkValidItem(item);
                 if (price.Equals(0.0))
