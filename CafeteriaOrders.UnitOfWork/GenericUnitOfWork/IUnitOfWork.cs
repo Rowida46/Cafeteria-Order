@@ -12,10 +12,10 @@ namespace CafeteriaOrders.UnitOfWork.GenericUnitOfWork
         /*
              ** Te spesify region of dbs wouldd be involved in the context...
              */
-        IGenericRepository<Meals> mealsRepository { get; }
-        IGenericRepository<Cart> cartsRepository { get; }
-        IGenericRepository<Review> reviewsRepository { get; }
-        IGenericRepository<CartItem> cartitemsRepository { get; }
+        IGenericRepository<Meals> MealsRepository { get; }
+        IGenericRepository<Cart> CartsRepository { get; }
+        IGenericRepository<Reviews> ReviewsRepository { get; }
+        IGenericRepository<CartItem> CartitemsRepository { get; }
         Task Commit();
     }
 }

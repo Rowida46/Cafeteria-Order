@@ -52,7 +52,7 @@ namespace Cafeteria_Order
             ** Unit of work is created we need to update the startup class,
             ** so it will be injected in our dependency injection framework
             */
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWorkGeneric>();
             services.AddScoped(typeof(IGenericRepository<>), typeof (GenericRepository<>));
             
 

@@ -14,13 +14,13 @@ namespace CafeteriaOrders.Service.CartServices
     public class CartServices : ICartService
     {
         Context context;
-        _unitofwork uof;
+        UnitOfWorkRepo uof;
         IUnitOfWork unitOfWork;
         public CartServices(Context context)
         {
             // unitOfWork = new UnitOfWork(context);
 
-            uof = new _unitofwork(context);
+            uof = new UnitOfWorkRepo(context);
         }
         
         public async Task<Cart> Add(AddCartDtos model)

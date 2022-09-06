@@ -15,11 +15,11 @@ namespace CafeteriaOrders.logic.GenericRepo
             * <update2> -: approch deleted...
          */
 
-        Task<IQueryable<TEntity>> GetAll();
+        Task<IEnumerable<TEntity>> GetAll();
 
-        Task<TEntity> GetById(int id);
+        Task<TEntity> GetById(object id);
 
-        Task Create(TEntity entity);
+        Task<bool> Create(TEntity entity);
 
         Task Update(int id, TEntity entity);
 

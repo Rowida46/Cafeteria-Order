@@ -14,7 +14,7 @@ namespace CafeteriaOrders.Service.Registeration
 {
     public class UserServicescs : IUserServicescs
     {
-        _unitofwork uof;
+        UnitOfWorkRepo uof;
         UserManager<IdentityUser> userManager;
         SignInManager<IdentityUser> SignInManager;
         private readonly IConfigurationSection _jwtSettings;

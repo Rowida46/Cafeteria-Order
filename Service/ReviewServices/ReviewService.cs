@@ -2,6 +2,7 @@
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
+using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,28 +13,57 @@ namespace CafeteriaOrders.Service.Review
 {
     public class ReviewServices : IReviewService
     {
-        _unitofwork uof;
+        //UnitOfWorkRepo uof;
+        IUnitOfWork _uof;
         public ReviewServices(Context context)
         {
-            uof = new _unitofwork(context);
+            _uof = new UnitOfWorkGeneric(context);
+          //   uof = new UnitOfWorkRepo(context);
         }
 
-        public async Task<IEnumerable<GetReviewDtos>> Get()
+        public async Task<bool> Add(Reviews model)
         {
-            return uof.review.get();
+            try
+            {
+                var rev = await _uof.ReviewsRepository.Create(model);
+                _uof.Commit();
+                return true;
+            }
+            catch { return false; }
+
+            /*
+            var review = uof.review.add(model);
+            uof.Commit();
+            updateAvrgRate(review);
+            return review;
+            */
         }
 
-        public async Task<GetReviewDtos> Details(int id)
+        public async Task<IEnumerable<Reviews>> Get()
         {
+            return await _uof.ReviewsRepository.GetAll();
+          //  return uof.review.get();
+        }
+
+        public async Task<Reviews> Details(int id)
+        {
+            var tmp = await _uof.ReviewsRepository.GetById(id);
+            return tmp;
+            /*
             var rev = uof.review.details(id);
             uof.Commit();
             return rev;
+            */
         } // get spedific
 
         public async Task<IEnumerable<GetReviewDtos>> MealsReview(int MealId) // retreive all meals by its id
         {
-            var meal = uof.review.getByMealId(MealId);
+            var meal = _uof.ReviewsRepository.GetById(MealId);
+            return (IEnumerable<GetReviewDtos>)meal;
+            /*
+             var meal = uof.review.getByMealId(MealId);
             return meal;
+            */
         }
 
         public decimal CalcAvrg(List<GetReviewDtos> lst)
@@ -66,38 +96,44 @@ namespace CafeteriaOrders.Service.Review
              ** 3- calc meal avrg ... _> use delegation for this claculation...
              *** 4- update the val of this meal -> commit update...
              */
-            var tmp = review.MealId;/* instead of prosess its val at each cal in runtime -> gonna perseve & call its val dirctly*/
-            var meal = uof.meal.details(tmp); /* get meal */
-            // include ... 
-            var lstOfRevs = uof.review.getByMealId(tmp);/* get lst of meal revs ..*/
-            //meal.Reviews = lstOfRevs; ? i need to add the chain of each meal has its own lst of reiews
-            meal.OverAllRate = CalcAvrg(lstOfRevs.ToList());
-            var updatedMeal = uof.meal.edit(meal);
-            uof.Commit();
-            return updatedMeal;
-        }
-
-        public async Task<AddReviewDtos> Add(AddReviewDtos model)
-        {
-            var review = uof.review.add(model);
-            uof.Commit();
-            updateAvrgRate(review);
-            return review;
+           
+            //var tmp = review.MealId;/* instead of prosess its val at each cal in runtime -> gonna perseve & call its val dirctly*/
+            //var meal = _uof.MealsRepository.GetById(tmp); /* get meal */
+            //// include ... 
+            //var lstOfRevs = _uof.ReviewsRepository.GetById(tmp);/* get lst of meal revs ..*/
+            ////meal.Reviews = lstOfRevs; ? i need to add the chain of each meal has its own lst of reiews
+            //meal.OverAllRate = CalcAvrg(lstOfRevs);
+            //var updatedMeal = _uof.MealsRepository.Update(meal);
+            //uof.Commit();
+            //return updatedMeal;
+                return null;
         }
 
 
-        public async Task<CafeteriaOrders.data.Review> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
+            try
+            {
+                await _uof.ReviewsRepository.Delete(id);
+                return true;
+            }
+            catch { return false; }
+
+            /*
             var review = uof.review.remove(id);
             uof.Commit();
             return review;
+            */
         }
 
-        public async Task<CafeteriaOrders.data.Review> Update(GetReviewDtos model)
+        public async Task Update(Reviews model)
         {
+            _uof.ReviewsRepository.Update(model.id,model);
+            /*
             var review = uof.review.edit(model);
             uof.Commit();
             return review;
+            */
         }
 
        

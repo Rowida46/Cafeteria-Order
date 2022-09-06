@@ -19,7 +19,7 @@ namespace CafeteriaOrders.logic.Models
          *Views Only for visualization...
          **/
         //public virtual Recipe? recipe { get; set; } as devied added.. 
-        public virtual ICollection<Review>? Reviews { get; set; } // we need to view lst of rews in Meal Details endpoint..
+        public virtual ICollection<Reviews>? Reviews { get; set; } // we need to view lst of rews in Meal Details endpoint..
 
         
     }

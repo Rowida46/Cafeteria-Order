@@ -15,7 +15,7 @@ namespace CafeteriaOrders.data
 
 
         public DbSet<Meals> meals { get; set; } 
-        public DbSet<Review> reviews { get; set; }
+        public DbSet<Reviews> reviews { get; set; }
         public DbSet<Recipe> recipes { get; set; }
         // public DbSet<Categories> categories { get; set; }
 

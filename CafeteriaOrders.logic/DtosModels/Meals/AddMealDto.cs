@@ -22,6 +22,6 @@ namespace CafeteriaOrders.logic.DtosModels
          * and we will only handle what to display in req in GetMealDtos...
          */
         public Recipe? recipe { get; set; }
-        public ICollection<Review>? Reviews { get; set; }
+        public ICollection<Reviews>? Reviews { get; set; }
     }
 }

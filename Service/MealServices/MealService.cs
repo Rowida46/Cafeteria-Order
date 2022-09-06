@@ -2,6 +2,7 @@
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
+using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +14,21 @@ namespace CafeteriaOrders.Service
     public class MealServices : ImealServices
     {
         Context context;
-        _unitofwork uof;
+        UnitOfWorkRepo uof;
+        IUnitOfWork _uof;
         public MealServices(Context context)
         {
-            uof = new _unitofwork(context);
+            _uof = new UnitOfWorkGeneric(context);
+            uof = new UnitOfWorkRepo(context);
         }
 
         public async Task<IEnumerable<GetMealDto>> Get() // get all lst
         {
-            return uof.meal.get();
+            return (IEnumerable<GetMealDto>)_uof.MealsRepository.Get();
         }
         public async Task<Meals> Details(int id)
         {
-            var meal = uof.meal.details(id);
+            var meal = await _uof.MealsRepository.GetById(id);
             return meal;
         } // get spedific
 
@@ -35,25 +38,47 @@ namespace CafeteriaOrders.Service
             var top7 = uof.meal.viewHighestmeals();
             return top7;
         }
-        public async Task<Meals> Add(AddMealDto model)
+        public async Task<Meals> Add(Meals model)
         {
-            var meal = uof.meal.add(model);
-            uof.Commit();
-            return meal;
+            try
+            {
+                var meal = await _uof.MealsRepository.Create(model);
+                _uof.Commit();
+                return model;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+           
         }
 
-        public async Task<Meals> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var meal = uof.meal.remove(id);
-            uof.Commit();
-            return meal;
+            try
+            {
+                await _uof.MealsRepository.Delete(id);
+                _uof.Commit();
+                return true;
+
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
 
         public async Task<Meals> Edit(Meals model)
         {
-            var meal = uof.meal.edit(model);
-            uof.Commit();
-            return  meal;
+            try
+            {
+                await _uof.MealsRepository.Update(model.Id, model);
+                _uof.Commit();
+                return model;
+            }
+            catch { return null; }
         }
     }  
 }

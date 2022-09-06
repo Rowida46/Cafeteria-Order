@@ -52,7 +52,7 @@ namespace Cafeteria_Order.Controllers
             */
         }
         [HttpPost]
-        public async Task<Meals> Add(AddMealDto model)
+        public async Task<Meals> Add(Meals model)
         {
             return await _mealService.Add(model);
             /*
@@ -63,9 +63,14 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpGet]
-        public async Task<Meals> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            return await _mealService.Delete(id);
+            try
+            {
+                return await _mealService.Delete(id);
+                    
+            }
+            catch { return false; }
             /*var meal = uof.meal.remove(id);
             uof.Commit();
             return meal;
