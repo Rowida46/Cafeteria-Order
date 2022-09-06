@@ -23,13 +23,13 @@ namespace Cafeteria_Order.Controllers
             _reviewService = reviewService;
         }
         [HttpGet]
-        public async Task<IEnumerable<GetReviewDtos>> Get()
+        public async Task<IEnumerable<Reviews>> Get()
         {
             return await _reviewService.Get();
         }
 
         [HttpGet]
-        public async Task<GetReviewDtos> Details(int id)
+        public async Task<Reviews> Details(int id)
         {
             return await _reviewService.Details(id);
 
@@ -48,9 +48,8 @@ namespace Cafeteria_Order.Controllers
         }
         
 
-        [HttpPost]
-       
-        public async Task<Meals> updateAvrgRate(AddReviewDtos review)
+        [HttpPost] 
+       public async Task<Meals> updateAvrgRate(AddReviewDtos review)
         {
             
             //uof.Commit();
@@ -68,9 +67,9 @@ namespace Cafeteria_Order.Controllers
              return await _reviewService.updateAvrgRate(review);
         }
 
-       public async Task<AddReviewDtos> Add(AddReviewDtos model)
+       public async Task<bool> Add(Reviews model)
         {
-            return await _reviewService.Add(model);
+             return await _reviewService.Add(model);
             /*
             var review = uof.review.add(model);
             uof.Commit();
@@ -80,7 +79,7 @@ namespace Cafeteria_Order.Controllers
         }
 
 
-        public async Task<Review> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
             return await _reviewService.Delete(id);
             /*var review = uof.review.remove(id);
@@ -89,9 +88,14 @@ namespace Cafeteria_Order.Controllers
             */
         }
 
-        public async Task<Review> Update(GetReviewDtos model)
+        public async Task<bool> Update(Reviews model)
         {
-            return await _reviewService.Update(model);
+            try
+            {
+                await _reviewService.Update(model);
+                return true;
+            }
+            catch { return false; }
             /*var review = uof.review.edit(model);
             uof.Commit();
             return review;

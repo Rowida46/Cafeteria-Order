@@ -1,4 +1,5 @@
 using CafeteriaOrders.data;
+using CafeteriaOrders.logic.GenericRepo;
 using CafeteriaOrders.Service;
 using CafeteriaOrders.Service.CartServices;
 using CafeteriaOrders.Service.Review;
@@ -45,10 +46,15 @@ namespace Cafeteria_Order
             services.AddScoped<ImealServices, MealServices>();
             services.AddScoped<ICartService, CartServices>();
 
-            /* Unit of work is created we need to update the startup class,
+            /* Injecting IUnitOfWork in our application
+             * we need to register IUnitOfWork and IRepository<T> to our Dependency Injection container
+             * DI Microsoft container for ASP NET Core apps.
+            ** Unit of work is created we need to update the startup class,
             ** so it will be injected in our dependency injection framework
             */
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWorkGeneric>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof (GenericRepository<>));
+            
 
 
             /* to handle json parsing for -> list of cartitem within each cart ..*/

@@ -50,9 +50,9 @@ namespace CafeteriaOrders.logic.DataAccess
             return meals.OrderByDescending(x => x.OverAllRate).Take(7);
         }
 
-        public GetMealDto details(int id)
+        public Meals details(int id)
         {
-            return AsQueryable().Where(ml => ml.Id == id).Select(meal => new GetMealDto
+            var tmp = AsQueryable().Where(ml => ml.Id == id).Select(meal => new Meals
             {
                 name = meal.name,
                 image = meal.image,
@@ -62,6 +62,7 @@ namespace CafeteriaOrders.logic.DataAccess
                 Id = meal.Id
 
             }).FirstOrDefault();
+            return tmp;
         }
 
         public Meals add(AddMealDto model)
@@ -80,7 +81,7 @@ namespace CafeteriaOrders.logic.DataAccess
             return tmp;
         }
 
-        public Meals edit(GetMealDto model)
+        public Meals edit(Meals model)
         {
             var tmp = new Meals
             {

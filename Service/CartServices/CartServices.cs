@@ -1,4 +1,5 @@
-﻿using CafeteriaOrders.data;
+﻿using AutoMapper;
+using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.DtosModels.Carts;
@@ -13,22 +14,23 @@ namespace CafeteriaOrders.Service.CartServices
 {
     public class CartServices : ICartService
     {
+        private readonly IMapper _mapper;
         Context context;
-        _unitofwork uof;
+        UnitOfWorkRepo uof;
         IUnitOfWork unitOfWork;
-        ///dto
         public CartServices(Context context)
         {
             // unitOfWork = new UnitOfWork(context);
 
-            uof = new _unitofwork(context);
+            uof = new UnitOfWorkRepo(context);
         }
         
         public async Task<Cart> Add(AddCartDtos model)
         {
-            var crt = uof.carts.add(model);
+            var crt = uof.carts.add(_mapper.Map<Cart>(model));
+            //var crt = uof.carts.add(model);
             uof.Commit();
-            return crt;
+            return  crt;
         }
 
                                                                                                                                                                                                                                                                 
@@ -68,6 +70,7 @@ namespace CafeteriaOrders.Service.CartServices
              1-  get meal details by id
              2- check quantity 
              */
+            // Meals meal = uof.meal.details(model.mealId);
             var meal = uof.meal.details(model.mealId);
             decimal totalPrice =0;
             if(meal.numberofUnits == model.quantity)

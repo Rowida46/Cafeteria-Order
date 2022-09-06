@@ -27,9 +27,13 @@ namespace CafeteriaOrders.logic.GenericRepo
             _dbSet = _dbcontext.Set<TEntity>();
         }
 
-        public virtual async Task Create(TEntity entity)
+        public async Task<bool> Create(TEntity entity)
         {
-            await _dbSet.AddAsync(entity);
+            try { 
+                await _dbSet.AddAsync(entity);
+                return true;
+            }
+            catch { return false; }
 
         }
 
@@ -42,7 +46,7 @@ namespace CafeteriaOrders.logic.GenericRepo
         public virtual async Task Delete(int id)
         {
             TEntity entityToDelete = await _dbSet.FindAsync(id);
-            Delete(entityToDelete);
+             Delete(entityToDelete);
         }
 
         public virtual async Task Delete(TEntity entityToDelete)
@@ -51,7 +55,7 @@ namespace CafeteriaOrders.logic.GenericRepo
             {
                 _dbSet.Attach(entityToDelete);
             }
-            _dbSet.Remove(entityToDelete);
+             _dbSet.Remove(entityToDelete);
         }
 
 
@@ -82,23 +86,29 @@ namespace CafeteriaOrders.logic.GenericRepo
         }
 
 
-        public async Task<IQueryable<TEntity>> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAll()
         {
-            IQueryable<TEntity> query = _dbSet;
+            /*IQueryable<TEntity> query = _dbSet;
             //return query.ToList();
 
             return _dbSet.AsQueryable(); // only outo compelete... -> as a collections -?
+            */
+            return await _dbSet.ToListAsync();
+
         }
 
-        public virtual async Task<TEntity> GetById(int id)
+        public virtual async Task<TEntity> GetById(object id)
         {
             return await _dbSet.FindAsync(id);
         }
 
         public async Task Update(int id, TEntity entity)
         {
+            _dbSet.Update(entity);
+            /*
             _dbSet.Attach(entity);
             _dbcontext.Entry(entity).State = EntityState.Modified;
+            */
         }
     }
 }

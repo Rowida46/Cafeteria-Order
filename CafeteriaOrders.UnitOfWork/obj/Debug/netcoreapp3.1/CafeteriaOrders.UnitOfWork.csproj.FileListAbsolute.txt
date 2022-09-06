@@ -1,0 +1,30 @@
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.deps.json
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.AssemblyReference.cache
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfoInputs.cache
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfo.cs
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CoreCompileInputs.cache
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CopyComplete
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva_Rowida\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.deps.json
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.AssemblyReference.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfoInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfo.cs
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CopyComplete
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+C:\Users\Phoebe George\Documents\GitHub\Cafeteria-Order\CafeteriaOrders.UnitOfWork\obj\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb

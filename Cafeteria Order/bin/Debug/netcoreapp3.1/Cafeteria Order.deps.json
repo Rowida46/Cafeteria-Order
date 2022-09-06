@@ -32,6 +32,7 @@
       "Cafeteria Order/1.0.0": {
         "dependencies": {
           "CafeteriaOrders.Service": "1.0.0",
+          "CafeteriaOrders.UnitOfWork": "1.0.0",
           "CafeteriaOrders.data": "1.0.0",
           "CafeteriaOrders.logic": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.15.0",
@@ -2239,6 +2240,7 @@
       "CafeteriaOrders.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "CafeteriaOrders.UnitOfWork": "1.0.0",
           "CafeteriaOrders.data": "1.0.0",
           "CafeteriaOrders.logic": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0"
@@ -2248,6 +2250,18 @@
         },
         "compile": {
           "CafeteriaOrders.Service.dll": {}
+        }
+      },
+      "CafeteriaOrders.UnitOfWork/1.0.0": {
+        "dependencies": {
+          "CafeteriaOrders.data": "1.0.0",
+          "CafeteriaOrders.logic": "1.0.0"
+        },
+        "runtime": {
+          "CafeteriaOrders.UnitOfWork.dll": {}
+        },
+        "compile": {
+          "CafeteriaOrders.UnitOfWork.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5139,6 +5153,11 @@
       "sha512": ""
     },
     "CafeteriaOrders.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CafeteriaOrders.UnitOfWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

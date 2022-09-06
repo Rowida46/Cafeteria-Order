@@ -6,10 +6,10 @@ using System.Text;
 
 namespace CafeteriaOrders.logic
 {
-    public class _unitofwork
+    public class UnitOfWorkRepo
     {
         private readonly Context dbcontext;
-        public _unitofwork(Context context)
+        public UnitOfWorkRepo(Context context)
         {
             dbcontext = context;
         }

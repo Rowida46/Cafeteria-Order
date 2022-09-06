@@ -16,15 +16,15 @@ namespace CafeteriaOrders.logic.DataAccess
             this.context = context;
         }
 
-        public Cart add(AddCartDtos model)
+        public Cart add(Cart model)
         {
-            var tmp = new Cart
+            /*var tmp = new Cart
             {
                 cartItems = model.cartItems,
                 totalPrice = model.totalPrice,
-            };
-            insert(tmp);
-            return tmp;
+            };*/
+            insert(model);
+            return model;
         }
 
         public IEnumerable<GetCartDtos> get()

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CafeteriaOrders.data
 {
-    public class Review
+    public class Reviews
     {
         [Key]
         public int id { get; set; }

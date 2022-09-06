@@ -3,6 +3,7 @@ using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
+using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,21 +14,23 @@ namespace CafeteriaOrders.Service
 {
     public class MealServices : ImealServices
     {
+        IMapper _mapper;
         Context context;
-        _unitofwork uof;
-        private readonly IMapper _mapper;
+        UnitOfWorkRepo uof;
+        IUnitOfWork _uof;
         public MealServices(Context context)
         {
-            uof = new _unitofwork(context);
+            _uof = new UnitOfWorkGeneric(context);
+            uof = new UnitOfWorkRepo(context);
         }
 
         public async Task<IEnumerable<GetMealDto>> Get() // get all lst
         {
-            return uof.meal.get();
+            return (IEnumerable<GetMealDto>)_uof.MealsRepository.Get();
         }
-        public async Task<GetMealDto> Details(int id)
+        public async Task<Meals> Details(int id)
         {
-            var meal = uof.meal.details(id);
+            var meal = await _uof.MealsRepository.GetById(id);
             return meal;
         } // get spedific
 
@@ -39,23 +42,45 @@ namespace CafeteriaOrders.Service
         }
         public async Task<Meals> Add(AddMealDto model)
         {
-            var meal = uof.meal.add(model);
-            uof.Commit();
-            return meal;
+            try
+            {
+                var meal = await _uof.MealsRepository.Create(_mapper.Map<Meals>(model));
+                _uof.Commit();
+                return _mapper.Map<Meals>(model);
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+           
         }
 
-        public async Task<Meals> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var meal = uof.meal.remove(id);
-            uof.Commit();
-            return meal;
+            try
+            {
+                await _uof.MealsRepository.Delete(id);
+                _uof.Commit();
+                return true;
+
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
 
-        public async Task<Meals> Edit(GetMealDto mode)
+        public async Task<Meals> Edit(Meals model)
         {
-            var meal = uof.meal.edit(mode);
-            uof.Commit();
-            return meal;
+            try
+            {
+                await _uof.MealsRepository.Update(model.Id, model);
+                _uof.Commit();
+                return model;
+            }
+            catch { return null; }
         }
     }  
 }
