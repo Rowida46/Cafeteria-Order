@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj": {}
+    "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\Service\\CafeteriaOrders.Service.csproj": {}
   },
   "projects": {
-    "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+    "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
+        "projectUniqueName": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
         "projectName": "CafeteriaOrders.data",
-        "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
-        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-        "outputPath": "D:\\Rowida_Eva\\CafeteriaOrders.data\\obj\\",
+        "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
+        "packagesPath": "C:\\Users\\Phoebe George\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoebe George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,21 +84,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+    "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
+        "projectUniqueName": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
         "projectName": "CafeteriaOrders.logic",
-        "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
-        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-        "outputPath": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\obj\\",
+        "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
+        "packagesPath": "C:\\Users\\Phoebe George\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoebe George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +116,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
               }
             }
           }
@@ -150,21 +158,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
+    "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj",
+        "projectUniqueName": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj",
         "projectName": "CafeteriaOrders.UnitOfWork",
-        "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj",
-        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-        "outputPath": "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\obj\\",
+        "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj",
+        "packagesPath": "C:\\Users\\Phoebe George\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoebe George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,11 +190,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
               },
-              "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
               }
             }
           }
@@ -211,21 +223,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj": {
+    "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\Service\\CafeteriaOrders.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\Service\\CafeteriaOrders.Service.csproj",
         "projectName": "CafeteriaOrders.Service",
-        "projectPath": "D:\\Rowida_Eva\\Service\\CafeteriaOrders.Service.csproj",
-        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-        "outputPath": "D:\\Rowida_Eva\\Service\\obj\\",
+        "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\Service\\CafeteriaOrders.Service.csproj",
+        "packagesPath": "C:\\Users\\Phoebe George\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phoebe George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -239,14 +255,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
               },
-              "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
               },
-              "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
-                "projectPath": "D:\\Rowida_Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj"
+              "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\Phoebe George\\Documents\\GitHub\\Cafeteria-Order\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj"
               }
             }
           }
@@ -285,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

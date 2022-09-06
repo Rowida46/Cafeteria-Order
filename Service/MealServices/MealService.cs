@@ -1,4 +1,5 @@
-﻿using CafeteriaOrders.data;
+﻿using AutoMapper;
+using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
@@ -14,6 +15,7 @@ namespace CafeteriaOrders.Service
     {
         Context context;
         _unitofwork uof;
+        private readonly IMapper _mapper;
         public MealServices(Context context)
         {
             uof = new _unitofwork(context);
