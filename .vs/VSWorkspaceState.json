@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Cafeteria Order",
-    "\\Cafeteria Order\\Controllers"
+    "\\Cafeteria Order\\Controllers",
+    "\\Service",
+    "\\Service\\MealServices"
   ],
-  "SelectedNode": "\\Cafeteria Order\\Controllers\\mealController.cs",
+  "SelectedNode": "\\Service\\MealServices\\MealService.cs",
   "PreviewInSolutionExplorer": false
 }
