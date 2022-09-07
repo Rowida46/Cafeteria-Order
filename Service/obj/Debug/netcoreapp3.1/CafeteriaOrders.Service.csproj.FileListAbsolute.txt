@@ -60,3 +60,5 @@ D:\Eva_Rowida\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.Cor
 D:\Eva_Rowida\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.csproj.CopyComplete
 D:\Eva_Rowida\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
 D:\Eva_Rowida\Service\obj\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva\Service\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb

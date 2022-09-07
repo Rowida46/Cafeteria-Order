@@ -6612,11 +6612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Eva_Rowida\\Service\\CafeteriaOrders.Service.csproj",
+      "projectUniqueName": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj",
       "projectName": "CafeteriaOrders.Service",
-      "projectPath": "D:\\Eva_Rowida\\Service\\CafeteriaOrders.Service.csproj",
+      "projectPath": "D:\\Eva\\Service\\CafeteriaOrders.Service.csproj",
       "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-      "outputPath": "D:\\Eva_Rowida\\Service\\obj\\",
+      "outputPath": "D:\\Eva\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6633,14 +6633,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Eva_Rowida\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-              "projectPath": "D:\\Eva_Rowida\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+            "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+              "projectPath": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
             },
-            "D:\\Eva_Rowida\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
-              "projectPath": "D:\\Eva_Rowida\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
+            "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj": {
+              "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj"
             },
-            "D:\\Eva_Rowida\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
-              "projectPath": "D:\\Eva_Rowida\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj"
+            "D:\\Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj": {
+              "projectPath": "D:\\Eva\\CafeteriaOrders.UnitOfWork\\CafeteriaOrders.UnitOfWork.csproj"
             }
           }
         }
