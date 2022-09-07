@@ -1,5 +1,6 @@
 ﻿using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
+using CafeteriaOrders.logic.DtosModels.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -10,46 +11,85 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
+//using Microsoft.AspNetCore.Authorization;
+
 namespace CafeteriaOrders.Service.Registeration
 {
     public class UserServicescs : IUserServicescs
     {
+        /*
         UnitOfWorkRepo uof;
         UserManager<IdentityUser> userManager;
         SignInManager<IdentityUser> SignInManager;
         private readonly IConfigurationSection _jwtSettings;
         UserManager<IdentityUser> userManeger;
-
-        public UserServicescs(Context context , UserManager<IdentityUser> userManeger,
-            IConfiguration configuration)  
+        */
+       
+        UserManager<IdentityUser> userManager;
+        private readonly IConfigurationSection _jwtSettings;
+        public UserServicescs(UserManager<IdentityUser> userManager, IConfiguration configuration)
         {
-            context = context;
-            userManager = userManager;
-            userManeger = userManeger;
+            this.userManager = userManager;
             _jwtSettings = configuration.GetSection("JwtSettings");
-
         }
 
-        /*
-        public string Register(User user)
+
+        public string Register(RegisterDto user)
         {
+
             var tmp = new IdentityUser
             {
                 UserName = user.name,
                 Email = user.email,
                 PhoneNumber = user.phone
+            
             };
-
-            var res = userManeger.CreateAsync(tmp).Result;
+            var res = userManager.CreateAsync(tmp).Result;
             if (res.Succeeded) // sending otps
             {
+                // sending otps
+                /*
+                * add role..
+                * add enum for roles in db
+                * add user dto + spesify role in field... 
+                *  [Authorize(Roles = "")] ->spesify role name in qoutes.
+                */
+                userManager.AddToRoleAsync(tmp, "Admin");
+                var result = userManager.AddPasswordAsync(tmp, user.passwordHash).Result;
+                if (result.Succeeded)
+                    return "تم إنشاء المستخدم بنجاح";
+            
+            // var res_role = userManager.AddToRoleAsync(tmp, user.role).Result; // change name in qoute by model.rolename
 
-            }
+            // sending otps
+            /*if (res_role.Succeeded)
+            {
+                res = userManager.AddPasswordAsync(tmp, user.passwordHash).Result; // change pass to ->user.pass
+                return "valid";
+            }*/
+        }
             return "Not Valid";
         }
-        */
-        // adding defualt claims & tokens config  ..  -> more rev nedded..
 
+
+        public async Task<string> Login(RegisterDto userModel)
+        {
+            var user = userManager.FindByNameAsync(userModel.name).Result;
+
+            if (user != null && await userManager.CheckPasswordAsync(user, userModel.passwordHash))
+            {
+                var signingCredentials = GetSigningCredentials();
+                var claims = GetClaims(user);
+                var tokenOptions = GenerateTokenOptions(signingCredentials, await claims);
+                var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+                return "Valid";
+            }
+            return "Invalid";
+
+        }
+
+      
+        // adding defualt claims & tokens config  ..  -> more rev nedded..
         private SigningCredentials GetSigningCredentials()
         {
             var key = Encoding.UTF8.GetBytes(_jwtSettings.GetSection("securityKey").Value);
@@ -57,16 +97,16 @@ namespace CafeteriaOrders.Service.Registeration
 
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
+
+        //[AllowAnonymous]
         private async Task<List<Claim>> GetClaims(IdentityUser user)
         {
             var claims = new List<Claim>
             {
-                // Specify ur profound claims, can be more than one
                 new Claim(ClaimTypes.Name, user.UserName),
                 //new Claim(ClaimTypes.MobilePhone, user.PhoneNumber)
             };
-            // adding not fixed & dynamic claims
-            var roles = await userManeger.GetRolesAsync(user);
+            var roles = await userManager.GetRolesAsync(user);
             foreach (var role in roles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
@@ -74,6 +114,7 @@ namespace CafeteriaOrders.Service.Registeration
             return claims;
         }
 
+        //[AllowAnonymous]
         private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
         {
             var tokenOptions = new JwtSecurityToken(
@@ -84,7 +125,5 @@ namespace CafeteriaOrders.Service.Registeration
                 signingCredentials: signingCredentials);
             return tokenOptions;
         }
-
     }
 }
-    

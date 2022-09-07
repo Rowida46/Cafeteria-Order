@@ -2,12 +2,14 @@ using CafeteriaOrders.data;
 using CafeteriaOrders.logic.GenericRepo;
 using CafeteriaOrders.Service;
 using CafeteriaOrders.Service.CartServices;
+using CafeteriaOrders.Service.Registeration;
 using CafeteriaOrders.Service.Review;
 using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -45,6 +47,7 @@ namespace Cafeteria_Order
             services.AddScoped<IReviewService, ReviewServices>();
             services.AddScoped<ImealServices, MealServices>();
             services.AddScoped<ICartService, CartServices>();
+            services.AddScoped<IUserServicescs, UserServicescs>();
 
             /* Injecting IUnitOfWork in our application
              * we need to register IUnitOfWork and IRepository<T> to our Dependency Injection container
@@ -61,6 +64,18 @@ namespace Cafeteria_Order
             services.AddControllers().AddNewtonsoftJson(x =>
              x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddApplicationInsightsTelemetry();
+
+            //services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddIdentity<IdentityUser, IdentityRole>(option =>
+            {
+                option.User.RequireUniqueEmail = true;
+                option.Password.RequireLowercase = true;
+                option.Password.RequireUppercase = true;
+                option.Password.RequireNonAlphanumeric = true;
+                option.Password.RequireDigit = true;
+            }).AddEntityFrameworkStores<Context>().AddDefaultTokenProviders();
+
 
             // JWT Configuration
             var jwtSettings = Configuration.GetSection("JwtSettings");
@@ -107,6 +122,7 @@ namespace Cafeteria_Order
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
