@@ -20,21 +20,25 @@ namespace CafeteriaOrders.data
         public DbSet<Recipe> recipes { get; set; }
         // public DbSet<Categories> categories { get; set; }
 
-        /*protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
             // hold id roles
             builder.Entity<IdentityRole>().HasData(new IdentityRole
             {
-                Name = "Super Admin",
+                Name = "SuperAdmin",
+                
                 NormalizedName = "SUPER ADMIN"
             }, new IdentityRole
             {
                 Name = "admin",
                 NormalizedName = "ADMIN"
             });
+            base.OnModelCreating(builder);
 
 
-        }*/
+
+
+        }
     }
 }
     

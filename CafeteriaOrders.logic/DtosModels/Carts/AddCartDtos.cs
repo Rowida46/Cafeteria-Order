@@ -9,6 +9,6 @@ namespace CafeteriaOrders.logic.DtosModels.Carts
     public class AddCartDtos
     {
         public virtual ICollection<CartItem> cartItems { get; set; }
-        public decimal totalPrice { get; set; }
+       // public decimal totalPrice { get; set; }
     }
 }

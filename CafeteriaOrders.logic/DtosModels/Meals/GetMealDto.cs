@@ -18,7 +18,7 @@ namespace CafeteriaOrders.logic.Models
         /* Working on the model inside -> 
          *Views Only for visualization...
          **/
-        //public virtual Recipe? recipe { get; set; } as devied added.. 
+        //public virtual Recipe? recipe { get; set; } as devid added.. 
         public virtual ICollection<Reviews>? Reviews { get; set; } // we need to view lst of rews in Meal Details endpoint..
 
         

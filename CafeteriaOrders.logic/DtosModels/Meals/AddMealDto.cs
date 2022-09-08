@@ -21,6 +21,7 @@ namespace CafeteriaOrders.logic.DtosModels
          * we will hold all meal info, in case of further & all details would be added
          * and we will only handle what to display in req in GetMealDtos...
          */
+        /*nullable data..*/
         public Recipe? recipe { get; set; }
         public ICollection<Reviews>? Reviews { get; set; }
     }

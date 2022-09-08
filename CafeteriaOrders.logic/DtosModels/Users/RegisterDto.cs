@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Text.Json.Serialization;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
+using CafeteriaOrders.data.Constants;
 
 namespace CafeteriaOrders.logic.DtosModels.Users
 {
@@ -22,7 +23,7 @@ namespace CafeteriaOrders.logic.DtosModels.Users
         [EmailAddress]
         public string email { get; set; }
 
-        public string role { get; set; }
+        public Role role { get; set; }
 
         //[Display(Name = "رقم الهاتف")]
         [Required(ErrorMessageResourceType = typeof(Validation), ErrorMessageResourceName = "Required")]

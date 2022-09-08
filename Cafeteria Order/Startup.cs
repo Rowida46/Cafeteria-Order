@@ -69,14 +69,15 @@ namespace Cafeteria_Order
 
             services.AddIdentity<IdentityUser, IdentityRole>(option =>
             {
-                option.User.RequireUniqueEmail = true;
-                option.Password.RequireLowercase = true;
-                option.Password.RequireUppercase = true;
-                option.Password.RequireNonAlphanumeric = true;
-                option.Password.RequireDigit = true;
+                option.User.RequireUniqueEmail = false;
+                option.Password.RequireLowercase = false;
+                option.Password.RequireUppercase = false;
+                option.Password.RequireNonAlphanumeric = false;
+                option.Password.RequireDigit = false;
+                option.Password.RequiredLength = 4;
             }).AddEntityFrameworkStores<Context>().AddDefaultTokenProviders();
 
-
+            
             // JWT Configuration
             var jwtSettings = Configuration.GetSection("JwtSettings");
             services.AddAuthentication(opt =>

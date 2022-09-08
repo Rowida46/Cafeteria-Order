@@ -1,4 +1,5 @@
 ﻿using CafeteriaOrders.data;
+using CafeteriaOrders.data;
 using CafeteriaOrders.logic.DtosModels.Carts;
 using CafeteriaOrders.logic.Models;
 using System;
@@ -21,7 +22,7 @@ namespace CafeteriaOrders.logic.DataAccess
             var tmp = new Cart
             {
                 cartItems = model.cartItems,
-                totalPrice = model.totalPrice,
+                //totalPrice = model.totalPrice,
             };
             insert(tmp);
             return tmp;

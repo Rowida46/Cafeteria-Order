@@ -10,6 +10,6 @@ namespace CafeteriaOrders.Service.Registeration
     {
         Task<string> Login(RegisterDto userModel);
 
-        string Register(RegisterDto userModel);
+        Task<string> Register(RegisterDto userModel);
     }
 }

@@ -19,9 +19,9 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpPost]
-        public string Register(RegisterDto userModel)
+        public async Task<string> Register(RegisterDto userModel)
         {
-            return _userService.Register(userModel);
+            return await _userService.Register(userModel);
         }
         [HttpPost]
         [AllowAnonymous]

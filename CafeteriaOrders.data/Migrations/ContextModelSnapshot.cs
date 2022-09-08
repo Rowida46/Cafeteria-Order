@@ -114,7 +114,7 @@ namespace CafeteriaOrders.data.Migrations
                     b.ToTable("recipes");
                 });
 
-            modelBuilder.Entity("CafeteriaOrders.data.Review", b =>
+            modelBuilder.Entity("CafeteriaOrders.data.Reviews", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -162,6 +162,22 @@ namespace CafeteriaOrders.data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "e5b0c77f-0b42-4fef-ab0b-ace409b33394",
+                            ConcurrencyStamp = "91e0da7e-0a65-4205-a7c2-c38f89816f59",
+                            Name = "SuperAdmin",
+                            NormalizedName = "SUPER ADMIN"
+                        },
+                        new
+                        {
+                            Id = "624b2a93-bd4d-4379-a57f-f1174b24f410",
+                            ConcurrencyStamp = "669f1213-a366-40ab-ad31-f26a48ad2484",
+                            Name = "admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -363,7 +379,7 @@ namespace CafeteriaOrders.data.Migrations
                     b.Navigation("meal");
                 });
 
-            modelBuilder.Entity("CafeteriaOrders.data.Review", b =>
+            modelBuilder.Entity("CafeteriaOrders.data.Reviews", b =>
                 {
                     b.HasOne("CafeteriaOrders.data.Meals", "male")
                         .WithMany("Reviews")

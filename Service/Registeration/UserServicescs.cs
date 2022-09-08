@@ -34,7 +34,7 @@ namespace CafeteriaOrders.Service.Registeration
         }
 
 
-        public string Register(RegisterDto user)
+        public async Task<string> Register(RegisterDto user)
         {
 
             var tmp = new IdentityUser
@@ -44,8 +44,9 @@ namespace CafeteriaOrders.Service.Registeration
                 PhoneNumber = user.phone
             
             };
-            var res = userManager.CreateAsync(tmp).Result;
-            if (res.Succeeded) // sending otps
+            Task res = userManager.CreateAsync(tmp);
+            res.Wait();
+            if (res.IsCompleted) // sending otps
             {
                 // sending otps
                 /*
@@ -54,10 +55,10 @@ namespace CafeteriaOrders.Service.Registeration
                 * add user dto + spesify role in field... 
                 *  [Authorize(Roles = "")] ->spesify role name in qoutes.
                 */
-                userManager.AddToRoleAsync(tmp, "Admin");
+                await userManager.AddToRoleAsync(tmp, "Admin");
                 var result = userManager.AddPasswordAsync(tmp, user.passwordHash).Result;
                 if (result.Succeeded)
-                    return "تم إنشاء المستخدم بنجاح";
+                    return "Registred";
             
             // var res_role = userManager.AddToRoleAsync(tmp, user.role).Result; // change name in qoute by model.rolename
 
