@@ -22,9 +22,9 @@ namespace CafeteriaOrders.Service
             uof = new UnitOfWorkRepo(context);
         }
 
-        public async Task<IEnumerable<GetMealDto>> Get() // get all lst
+        public  IEnumerable<Meals> Get() // get all lst
         {
-            return (IEnumerable<GetMealDto>)_uof.MealsRepository.Get();
+            return  _uof.MealsRepository.Get().ToList();
         }
         public async Task<Meals> Details(int id)
         {

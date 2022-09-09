@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Cafeteria_Order</RootNamespace>
+    <UserSecretsId>93eb6315-f58b-4f1c-a4bd-eef0d59f30d4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

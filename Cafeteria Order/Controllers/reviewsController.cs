@@ -23,11 +23,11 @@ namespace Cafeteria_Order.Controllers
             _reviewService = reviewService;
         }
         [HttpGet]
-        public async Task<IEnumerable<Reviews>> Get()
+        public IEnumerable<Reviews> Get()
         {
-            return await _reviewService.Get();
+            return  _reviewService.Get();
         }
-
+        
         [HttpGet]
         public async Task<Reviews> Details(int id)
         {
@@ -49,7 +49,7 @@ namespace Cafeteria_Order.Controllers
         
 
         [HttpPost] 
-       public async Task<Meals> updateAvrgRate(AddReviewDtos review)
+        public async Task<Meals> updateAvrgRate(AddReviewDtos review)
         {
             
             //uof.Commit();
@@ -67,7 +67,8 @@ namespace Cafeteria_Order.Controllers
              return await _reviewService.updateAvrgRate(review);
         }
 
-       public async Task<bool> Add(Reviews model)
+        [HttpPost]
+        public async Task<Reviews> Add(Reviews model)
         {
              return await _reviewService.Add(model);
             /*

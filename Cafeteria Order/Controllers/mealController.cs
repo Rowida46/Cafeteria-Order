@@ -26,7 +26,7 @@ namespace Cafeteria_Order.Controllers
             return Ok("Testing Ok test");
         } 
         [HttpGet]
-        public Task<IEnumerable<GetMealDto>> Get() // get all lst
+        public IEnumerable<Meals> Get() // get all lst
         {
             return _mealService.Get();
 
@@ -61,6 +61,7 @@ namespace Cafeteria_Order.Controllers
             return meal;
             */
         }
+
 
         [HttpGet]
         public async Task<bool> Delete(int id)

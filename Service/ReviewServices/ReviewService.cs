@@ -21,15 +21,15 @@ namespace CafeteriaOrders.Service.Review
           //   uof = new UnitOfWorkRepo(context);
         }
 
-        public async Task<bool> Add(Reviews model)
+        public async Task<Reviews> Add(Reviews model)
         {
             try
             {
                 var rev = await _uof.ReviewsRepository.Create(model);
                 _uof.Commit();
-                return true;
+                return model;
             }
-            catch { return false; }
+            catch { return null; }
 
             /*
             var review = uof.review.add(model);
@@ -39,10 +39,11 @@ namespace CafeteriaOrders.Service.Review
             */
         }
 
-        public async Task<IEnumerable<Reviews>> Get()
+        public IEnumerable<Reviews> Get()
         {
-            return await _uof.ReviewsRepository.GetAll();
-          //  return uof.review.get();
+            return  _uof.ReviewsRepository.Get().ToList();
+            // uof.MealsRepository.Get().ToList();
+            //  return uof.review.get();
         }
 
         public async Task<Reviews> Details(int id)

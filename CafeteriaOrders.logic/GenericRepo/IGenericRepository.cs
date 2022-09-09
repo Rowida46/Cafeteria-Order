@@ -19,6 +19,7 @@ namespace CafeteriaOrders.logic.GenericRepo
 
         Task<TEntity> GetById(object id);
 
+        //TEntity Create(TEntity entity);
         Task<bool> Create(TEntity entity);
 
         Task Update(int id, TEntity entity);
@@ -26,7 +27,7 @@ namespace CafeteriaOrders.logic.GenericRepo
         Task Delete(int id);
         Task Delete(TEntity entityToDelete);
 
-        Task<IEnumerable<TEntity>> Get(
+        IEnumerable<TEntity> Get(
                   Expression<Func<TEntity, bool>> filter = null,
                   Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
                   string includeProperties = "");

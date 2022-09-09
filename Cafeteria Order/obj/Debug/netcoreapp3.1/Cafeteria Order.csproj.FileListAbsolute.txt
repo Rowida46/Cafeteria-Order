@@ -414,3 +414,5 @@ D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCou
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\Twilio.dll

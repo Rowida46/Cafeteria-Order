@@ -4,6 +4,8 @@ using CafeteriaOrders.Service;
 using CafeteriaOrders.Service.CartServices;
 using CafeteriaOrders.Service.Registeration;
 using CafeteriaOrders.Service.Review;
+using CafeteriaOrders.Service.VerificationServices;
+using CafeteriaOrders.Service.VerificationServices.OTPConfig;
 using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -49,6 +52,22 @@ namespace Cafeteria_Order
             services.AddScoped<ICartService, CartServices>();
             services.AddScoped<IUserServicescs, UserServicescs>();
 
+            /*add twilo verification*/
+            
+            services.AddScoped<IVerification, Verification>();
+            //services.AddSingleton<IVerification>(new Verification(
+            //    Configuration.GetSection("Twilio").Get<TwilioConfig>()));
+            services.Configure<TwilioConfig>(Configuration);
+
+            //services.AddSingleton<IVerification>(new Verification(
+                
+            //    ));
+            //Configuration.GetSection("Twilio").Get<Configuration.Twilio>()
+
+
+
+
+
             /* Injecting IUnitOfWork in our application
              * we need to register IUnitOfWork and IRepository<T> to our Dependency Injection container
              * DI Microsoft container for ASP NET Core apps.
@@ -56,7 +75,7 @@ namespace Cafeteria_Order
             ** so it will be injected in our dependency injection framework
             */
             services.AddScoped<IUnitOfWork, UnitOfWorkGeneric>();
-            services.AddScoped(typeof(IGenericRepository<>), typeof (GenericRepository<>));
+                services.AddScoped(typeof(IGenericRepository<>), typeof (GenericRepository<>));
             
 
 

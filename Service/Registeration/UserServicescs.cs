@@ -10,6 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Twilio.Rest.Verify.V2.Service;
 
 //using Microsoft.AspNetCore.Authorization;
 
@@ -26,6 +27,7 @@ namespace CafeteriaOrders.Service.Registeration
         */
        
         UserManager<IdentityUser> userManager;
+        SignInManager<IdentityUser> signInManager;
         private readonly IConfigurationSection _jwtSettings;
         public UserServicescs(UserManager<IdentityUser> userManager, IConfiguration configuration)
         {
@@ -72,6 +74,18 @@ namespace CafeteriaOrders.Service.Registeration
             return "Not Valid";
         }
 
+        public async Task SendOTP(string phoneNumber, string channel)
+        {
+           /*
+            var user = await signInManager.GetTwoFactorAuthenticationUserAsync();
+            if (user == null)
+            {
+                throw new InvalidOperationException("Unable to load two-factor authentication user.");
+            }
+           */
+          
+
+        }
 
         public async Task<string> Login(RegisterDto userModel)
         {

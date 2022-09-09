@@ -29,8 +29,8 @@ namespace CafeteriaOrders.logic.GenericRepo
 
         public async Task<bool> Create(TEntity entity)
         {
-            try { 
-                await _dbSet.AddAsync(entity);
+            try {
+               await _dbSet.AddAsync(entity);
                 return true;
             }
             catch { return false; }
@@ -59,7 +59,7 @@ namespace CafeteriaOrders.logic.GenericRepo
         }
 
 
-        public virtual async Task<IEnumerable<TEntity>> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
+        public virtual  IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
         {
             IQueryable<TEntity> query = _dbSet;
             if (filter != null) /*lambda expr -> filter based in a spesific pattern..*/
@@ -76,11 +76,11 @@ namespace CafeteriaOrders.logic.GenericRepo
 
             if (orderBy != null) /*lambda expr -> to returnan ordered IQueryable obj*/
             {
-                return await orderBy(query).ToListAsync();
+                return  orderBy(query).ToList();
             }
             else
             {
-                return await query.ToListAsync();
+                return query.ToList();
             }
 
         }
