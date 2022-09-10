@@ -11,13 +11,17 @@ namespace CafeteriaOrders.Service
     public interface ImealServices
     {
 
-        IEnumerable<Meals> Get();
-        Task<Meals> Details(int id);
-        Task<IEnumerable<GetMealDto>> HighestRate();
-        Task<Meals> Add(Meals model);
+        Task<ServiceResponse<List<Meals>>> Get();
+
+        Task<ServiceResponse<Meals>> Details(int id);
+
+        Task<ServiceResponse<List<Meals>>> HighestRate();
+
+        Task<ServiceResponse<Meals>> Add(Meals model);
 
         Task<bool> Delete(int id);
-        Task<Meals> Edit(Meals mode);
+
+        Task<ServiceResponse<Meals>> Edit(Meals mode);
 
     }
 }

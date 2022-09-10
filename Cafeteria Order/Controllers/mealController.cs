@@ -20,20 +20,21 @@ namespace Cafeteria_Order.Controllers
         {
             _mealService = mealService;
         }
+
         [HttpGet]
         public IActionResult test()
         {
             return Ok("Testing Ok test");
         } 
+
         [HttpGet]
-        public IEnumerable<Meals> Get() // get all lst
+        public Task<ServiceResponse<List<Meals>>> Get() // get all lst
         {
             return _mealService.Get();
-
         }
 
         [HttpGet]
-        public async Task<Meals>Details(int id)
+        public async Task<ServiceResponse<Meals>> Details(int id)
         {
             return await _mealService.Details(id);
             /*
@@ -42,17 +43,18 @@ namespace Cafeteria_Order.Controllers
             */
         } // get spedific
 
-        [HttpGet] 
-        public  async Task<IEnumerable<GetMealDto>> HighestRate()
+        [HttpGet]
+        public Task<ServiceResponse<List<Meals>>> HighestRate()
         {
-            return await _mealService.HighestRate();
+            return _mealService.HighestRate();
             /*//mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
             var top7 = uof.meal.viewHighestmeals();
             return top7;
             */
         }
+
         [HttpPost]
-        public async Task<Meals> Add(Meals model)
+        public async Task<ServiceResponse<Meals>> Add(Meals model)
         {
             return await _mealService.Add(model);
             /*
@@ -61,7 +63,6 @@ namespace Cafeteria_Order.Controllers
             return meal;
             */
         }
-
 
         [HttpGet]
         public async Task<bool> Delete(int id)
@@ -79,7 +80,7 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpPost]
-        public async Task<Meals> Edit(Meals mode)
+        public async Task<ServiceResponse<Meals>> Edit(Meals mode)
         {
             return await _mealService.Edit(mode);
             /*

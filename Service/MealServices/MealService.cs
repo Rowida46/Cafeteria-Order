@@ -1,4 +1,5 @@
-﻿using CafeteriaOrders.data;
+﻿using AutoMapper;
+using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
 using CafeteriaOrders.logic.DtosModels;
 using CafeteriaOrders.logic.Models;
@@ -16,41 +17,82 @@ namespace CafeteriaOrders.Service
         Context context;
         UnitOfWorkRepo uof;
         IUnitOfWork _uof;
-        public MealServices(Context context)
+        private readonly IMapper _mapper;
+
+        public MealServices(Context context, IMapper mapper )
         {
+            _mapper = mapper;
             _uof = new UnitOfWorkGeneric(context);
-            uof = new UnitOfWorkRepo(context);
+           // uof = new UnitOfWorkRepo(context);
         }
 
-        public  IEnumerable<Meals> Get() // get all lst
+        public async Task<ServiceResponse<List<Meals>>> Get() // get all lst
         {
-            return  _uof.MealsRepository.Get().ToList();
+            var service = new ServiceResponse<List<Meals>>();
+            try
+            {
+                var tmp = _uof.MealsRepository.Get().ToList();
+                service.Data = tmp;
+                service.Success = tmp == null ? false : true;
+                service.Message = "View Meals";
+
+            }
+            catch (Exception e){
+                service.Success = false;
+                service.Message = e.Message;
+            }
+            return service;
         }
-        public async Task<Meals> Details(int id)
+        public async Task<ServiceResponse<Meals>> Details(int id)
         {
-            var meal = await _uof.MealsRepository.GetById(id);
-            return meal;
+            var service = new ServiceResponse<Meals>();
+            try { 
+                var meal = await _uof.MealsRepository.GetById(id);
+                service.Data = meal;
+                service.Success = meal ==null ? false : true;
+                service.Message = "Details pf a Spesific Meal";
+            }
+            catch(Exception e) {
+                service.Message = e.Message;
+            }
+            return service;
         } // get spedific
 
-        public async Task<IEnumerable<GetMealDto>> HighestRate()
+        public async Task<ServiceResponse<List<Meals>>> HighestRate()
         {
             //mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
-            var top7 = uof.meal.viewHighestmeals();
-            return top7;
+            //var top7 = uof.meal.viewHighestmeals();
+            var service = new ServiceResponse<List<Meals>>();
+            try
+            {
+                var top7 = _uof.MealsRepository.Get().OrderBy(x => x.OverAllRate).Take(7).ToList();
+                service.Data = top7;
+                service.Success = top7 == null ? false : true;
+                service.Message = "View Meals of Highest Rates";
+            }
+            catch (Exception e)
+            {
+                service.Success = false;
+                service.Message = e.Message;
+            }
+            return service;
         }
-        public async Task<Meals> Add(Meals model)
+        public async Task<ServiceResponse<Meals>> Add(Meals model)
         {
+            var service = new ServiceResponse<Meals>();
             try
             {
                 var meal = await _uof.MealsRepository.Create(model);
                 _uof.Commit();
-                return model;
+                service.Data = model;
+                service.Message = "Model added";
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                return null;
+                service.Message = e.Message;
+                service.Success = false;  
             }
+            return service;
            
         }
 
@@ -70,15 +112,22 @@ namespace CafeteriaOrders.Service
             }
         }
 
-        public async Task<Meals> Edit(Meals model)
+        public async Task<ServiceResponse<Meals>> Edit(Meals model)
         {
+            var service = new ServiceResponse<Meals>();
+
             try
             {
                 await _uof.MealsRepository.Update(model.Id, model);
                 _uof.Commit();
-                return model;
+                service.Success = true;
+                service.Data = model;
+                service.Message = "Updated";
             }
-            catch { return null; }
+            catch (Exception e){ service.Message = e.Message;
+                service.Success = false;
+            }
+            return service;
         }
     }  
 }

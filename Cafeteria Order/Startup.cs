@@ -44,7 +44,7 @@ namespace Cafeteria_Order
 
             services.AddControllers();
             /*adding automapping...*/
-            //services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup));
 
             // adding service layer...
             services.AddScoped<IReviewService, ReviewServices>();
