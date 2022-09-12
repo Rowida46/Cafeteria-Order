@@ -1,4 +1,4 @@
-﻿using CafeteriaOrders.logic.DtosModels.Users;
+﻿using CafeteriaOrders.logic.DtosModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +8,7 @@ namespace CafeteriaOrders.Service.Registeration
 {
     public interface IUserServicescs
     {
-        Task<string> Login(RegisterDto userModel);
+        Task<LoginResponsetDto> Login(LoginRequestDto userModel);
 
         Task<string> Register(RegisterDto userModel);
     }

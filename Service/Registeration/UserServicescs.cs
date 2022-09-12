@@ -1,6 +1,6 @@
 ﻿using CafeteriaOrders.data;
 using CafeteriaOrders.logic;
-using CafeteriaOrders.logic.DtosModels.Users;
+using CafeteriaOrders.logic.DtosModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -87,7 +87,7 @@ namespace CafeteriaOrders.Service.Registeration
 
         }
 
-        public async Task<string> Login(RegisterDto userModel)
+        public async Task<LoginResponsetDto> Login(LoginRequestDto userModel)
         {
             var user = userManager.FindByNameAsync(userModel.name).Result;
 
@@ -97,10 +97,9 @@ namespace CafeteriaOrders.Service.Registeration
                 var claims = GetClaims(user);
                 var tokenOptions = GenerateTokenOptions(signingCredentials, await claims);
                 var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
-                return "Valid";
+                return new LoginResponsetDto { name = user.UserName,token = token,email = user.Email,userId = user.Id};
             }
-            return "Invalid";
-
+            return null;
         }
 
       

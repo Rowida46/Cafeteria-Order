@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Threading.Tasks;
-using CafeteriaOrders.logic.DtosModels.Users;
+using CafeteriaOrders.logic.DtosModels;
 
 namespace Cafeteria_Order.Controllers
 {
@@ -25,7 +25,7 @@ namespace Cafeteria_Order.Controllers
         }
         [HttpPost]
         [AllowAnonymous]
-        public Task<string> Login(RegisterDto userModel)
+        public Task<LoginResponsetDto> Login(LoginRequestDto userModel)
         {
             return _userService.Login(userModel);
         }

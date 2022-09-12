@@ -8,14 +8,14 @@ using System.Text.Json.Serialization;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 using CafeteriaOrders.data.Constants;
 
-namespace CafeteriaOrders.logic.DtosModels.Users
+namespace CafeteriaOrders.logic.DtosModels
 {
     public class RegisterDto
     {
         public int Id { get; set; }
 
         // [Display(Name = "ألاسم")]
-        [Required(ErrorMessageResourceType = typeof(Validation), ErrorMessageResourceName = "Required")]
+        [Required(ErrorMessageResourceType = typeof(Validation))]
         public string name { get; set; }
 
         // [Display(Name = "الاجيميل")]
@@ -26,7 +26,7 @@ namespace CafeteriaOrders.logic.DtosModels.Users
         public Role role { get; set; }
 
         //[Display(Name = "رقم الهاتف")]
-        [Required(ErrorMessageResourceType = typeof(Validation), ErrorMessageResourceName = "Required")]
+        [Required(ErrorMessageResourceType = typeof(Validation))]
         [StringLength(11, MinimumLength = 11, ErrorMessageResourceType = typeof(Validation))]
         [RegularExpression("01[0125][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]",
             ErrorMessageResourceType = typeof(Validation), ErrorMessageResourceName = "Required"
