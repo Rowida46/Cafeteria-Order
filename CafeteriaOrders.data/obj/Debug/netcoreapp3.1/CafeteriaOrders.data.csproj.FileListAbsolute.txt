@@ -63,3 +63,16 @@ D:\Eva_Rowida\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.
 D:\Eva_Rowida\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
 D:\Eva_Rowida\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
 D:\Eva_Rowida\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.genruntimeconfig.cache
+D:\Eva_Cafeteria\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.deps.json
+D:\Eva_Cafeteria\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.json
+D:\Eva_Cafeteria\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.runtimeconfig.dev.json
+D:\Eva_Cafeteria\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva_Cafeteria\CafeteriaOrders.data\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.csproj.AssemblyReference.cache
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfoInputs.cache
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.AssemblyInfo.cs
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.csproj.CoreCompileInputs.cache
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva_Cafeteria\CafeteriaOrders.data\obj\Debug\netcoreapp3.1\CafeteriaOrders.data.genruntimeconfig.cache

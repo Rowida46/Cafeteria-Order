@@ -5943,11 +5943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
+      "projectUniqueName": "D:\\Eva_Cafeteria\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
       "projectName": "CafeteriaOrders.logic",
-      "projectPath": "D:\\Eva\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
+      "projectPath": "D:\\Eva_Cafeteria\\CafeteriaOrders.logic\\CafeteriaOrders.logic.csproj",
       "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-      "outputPath": "D:\\Eva\\CafeteriaOrders.logic\\obj\\",
+      "outputPath": "D:\\Eva_Cafeteria\\CafeteriaOrders.logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5964,8 +5964,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
-              "projectPath": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
+            "D:\\Eva_Cafeteria\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj": {
+              "projectPath": "D:\\Eva_Cafeteria\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj"
             }
           }
         }

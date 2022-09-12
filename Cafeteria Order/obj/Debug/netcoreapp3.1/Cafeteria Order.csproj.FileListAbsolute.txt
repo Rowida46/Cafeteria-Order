@@ -418,3 +418,99 @@ D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstracti
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\Twilio.dll
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Eva\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.exe
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.deps.json
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.runtimeconfig.json
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.runtimeconfig.dev.json
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Cafeteria Order.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\Twilio.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+D:\Eva_Cafeteria\Cafeteria Order\bin\Debug\netcoreapp3.1\CafeteriaOrders.Service.pdb
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.csproj.AssemblyReference.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.AssemblyInfoInputs.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.AssemblyInfo.cs
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.csproj.CoreCompileInputs.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.MvcApplicationPartsAssemblyInfo.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\staticwebassets\Cafeteria Order.StaticWebAssets.Manifest.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.RazorTargetAssemblyInfo.cache
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.csproj.CopyComplete
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.dll
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.pdb
+D:\Eva_Cafeteria\Cafeteria Order\obj\Debug\netcoreapp3.1\Cafeteria Order.genruntimeconfig.cache

@@ -5961,11 +5961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
+      "projectUniqueName": "D:\\Eva_Cafeteria\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
       "projectName": "CafeteriaOrders.data",
-      "projectPath": "D:\\Eva\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
+      "projectPath": "D:\\Eva_Cafeteria\\CafeteriaOrders.data\\CafeteriaOrders.data.csproj",
       "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
-      "outputPath": "D:\\Eva\\CafeteriaOrders.data\\obj\\",
+      "outputPath": "D:\\Eva_Cafeteria\\CafeteriaOrders.data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
