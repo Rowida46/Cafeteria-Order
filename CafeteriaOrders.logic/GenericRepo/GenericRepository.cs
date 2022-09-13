@@ -58,21 +58,23 @@ namespace CafeteriaOrders.logic.GenericRepo
              _dbSet.Remove(entityToDelete);
         }
 
-
-        public virtual  IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
+        public virtual IEnumerable<TEntity> Get(
+                  Expression<Func<TEntity, bool>> filter = null,
+                  Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+                  string includeProperties = "")
         {
             IQueryable<TEntity> query = _dbSet;
             if (filter != null) /*lambda expr -> filter based in a spesific pattern..*/
             {
                 query = query.Where(filter);
             }
-            /*
+            
             foreach (var includeProperty in includeProperties.Split
                 (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 query = query.Include(includeProperty);
             }
-            */
+            
 
             if (orderBy != null) /*lambda expr -> to returnan ordered IQueryable obj*/
             {
@@ -84,7 +86,6 @@ namespace CafeteriaOrders.logic.GenericRepo
             }
 
         }
-
 
         public async Task<IEnumerable<TEntity>> GetAll()
         {
@@ -101,7 +102,11 @@ namespace CafeteriaOrders.logic.GenericRepo
         {
             return await _dbSet.FindAsync(id);
         }
+        public  TEntity FirstOrDefault(Expression<Func<TEntity, bool>> predicate)
+        {
 
+            return  _dbSet.FirstOrDefault(predicate);
+        }
         public async Task Update(int id, TEntity entity)
         {
             _dbSet.Update(entity);
@@ -109,6 +114,19 @@ namespace CafeteriaOrders.logic.GenericRepo
             _dbSet.Attach(entity);
             _dbcontext.Entry(entity).State = EntityState.Modified;
             */
+        }
+
+        public  IQueryable<TEntity> Include<TEntity>(Expression<Func<TEntity, object>>[] includes)  
+        {
+            /* IQueryable<TEntity> query = null;
+             foreach (var include in includes)
+             {
+                 query = _dbSet.Include(include);
+             }
+
+             return query == null ? _dbSet : query;
+            */
+            return null;
         }
     }
 }

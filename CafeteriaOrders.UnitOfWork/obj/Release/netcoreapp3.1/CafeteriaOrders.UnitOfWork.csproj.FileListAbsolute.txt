@@ -1,0 +1,15 @@
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.deps.json
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.data.dll
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.logic.dll
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.data.pdb
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\bin\Release\netcoreapp3.1\CafeteriaOrders.logic.pdb
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.AssemblyReference.cache
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfoInputs.cache
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.AssemblyInfo.cs
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CoreCompileInputs.cache
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.csproj.CopyComplete
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.dll
+D:\Eva_Cafeteria\CafeteriaOrders.UnitOfWork\obj\Release\netcoreapp3.1\CafeteriaOrders.UnitOfWork.pdb

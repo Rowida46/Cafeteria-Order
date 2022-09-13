@@ -13,13 +13,11 @@ namespace CafeteriaOrders.data
 
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> Cartitems { get; set; }
-
-
         public DbSet<Meals> meals { get; set; }
         public DbSet<Reviews> reviews { get; set; }
         public DbSet<Recipe> recipes { get; set; }
-        // public DbSet<Categories> categories { get; set; }
 
+        // public DbSet<Categories> categories { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             // hold id roles
@@ -34,10 +32,6 @@ namespace CafeteriaOrders.data
                 NormalizedName = "ADMIN"
             });
             base.OnModelCreating(builder);
-
-
-
-
         }
     }
 }

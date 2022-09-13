@@ -16,17 +16,14 @@ namespace CafeteriaOrders.logic.GenericRepo
          */
 
         Task<IEnumerable<TEntity>> GetAll();
-
         Task<TEntity> GetById(object id);
-
         //TEntity Create(TEntity entity);
         Task<bool> Create(TEntity entity);
-
         Task Update(int id, TEntity entity);
-
         Task Delete(int id);
         Task Delete(TEntity entityToDelete);
-
+        TEntity FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
+        // IQueryable<T> IncludeMultiple<T>(this IQueryable<T> query, params Expression<Func<T, object>>[] includes);
         IEnumerable<TEntity> Get(
                   Expression<Func<TEntity, bool>> filter = null,
                   Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

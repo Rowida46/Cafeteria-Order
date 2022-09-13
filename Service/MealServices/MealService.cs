@@ -18,7 +18,6 @@ namespace CafeteriaOrders.Service
         UnitOfWorkRepo uof;
         IUnitOfWork _uof;
         private readonly IMapper _mapper;
-
         public MealServices(Context context, IMapper mapper )
         {
             _mapper = mapper;
@@ -31,7 +30,7 @@ namespace CafeteriaOrders.Service
             var service = new ServiceResponse<List<Meals>>();
             try
             {
-                var tmp = _uof.MealsRepository.Get().ToList();
+                var tmp = _uof.MealsRepository.Get(includeProperties : "Reviews").ToList();
                 service.Data = tmp;
                 service.Success = tmp == null ? false : true;
                 service.Message = "View Meals";
@@ -43,21 +42,24 @@ namespace CafeteriaOrders.Service
             }
             return service;
         }
-        public async Task<ServiceResponse<Meals>> Details(int id)
+        public async Task<ServiceResponse<List<Meals>>> Details(int id)
         {
-            var service = new ServiceResponse<Meals>();
-            try { 
-                var meal = await _uof.MealsRepository.GetById(id);
-                service.Data = meal;
-                service.Success = meal ==null ? false : true;
-                service.Message = "Details pf a Spesific Meal";
+            var service = new ServiceResponse<List<Meals>>();
+            try
+            {
+                var tmp = _uof.MealsRepository.Get(includeProperties: "Reviews").Where(ml => ml.Id == id).ToList();
+                service.Data = tmp;
+                service.Success = tmp == null ? false : true;
+                service.Message = "Details of a specific meal";
+
             }
-            catch(Exception e) {
+            catch (Exception e)
+            {
+                service.Success = false;
                 service.Message = e.Message;
             }
             return service;
         } // get spedific
-
         public async Task<ServiceResponse<List<Meals>>> HighestRate()
         {
             //mealsViewModel.GroupBy(ml => ml.Id).OrderByDescending(m => m.OverAllRate).Task(7).Select()
@@ -65,7 +67,7 @@ namespace CafeteriaOrders.Service
             var service = new ServiceResponse<List<Meals>>();
             try
             {
-                var top7 = _uof.MealsRepository.Get().OrderBy(x => x.OverAllRate).Take(7).ToList();
+                var top7 = _uof.MealsRepository.Get().OrderByDescending(x => x.OverAllRate).Take(7).ToList();
                 service.Data = top7;
                 service.Success = top7 == null ? false : true;
                 service.Message = "View Meals of Highest Rates";
@@ -95,7 +97,6 @@ namespace CafeteriaOrders.Service
             return service;
            
         }
-
         public async Task<bool> Delete(int id)
         {
             try
@@ -111,7 +112,6 @@ namespace CafeteriaOrders.Service
                 return false;
             }
         }
-
         public async Task<ServiceResponse<Meals>> Edit(Meals model)
         {
             var service = new ServiceResponse<Meals>();

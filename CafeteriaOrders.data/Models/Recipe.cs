@@ -14,12 +14,10 @@ namespace CafeteriaOrders.data
     {
         [Key]
         public int id { get; set; }
-
         // to handle fk
         public int mealId { get; set; }
         [ForeignKey(nameof(mealId))]
         public Meals meal { get; set; } 
-
         // generall info about meals -> (types AKA Syamy, diet, loww cal)
         public string ingredients { get; set; }
         public string type { get; set; }

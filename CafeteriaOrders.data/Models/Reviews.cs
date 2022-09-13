@@ -15,10 +15,8 @@ namespace CafeteriaOrders.data
         public int MealId { get; set; }
         [ForeignKey(nameof(MealId))]
         public Meals male { get; set; }
-
         // target rev (Comment & rate)
         public string comment { get; set; }
-
         [Required]
         [Range(0, 5, ErrorMessage = "Please select number between 1 and 5")]
         public int rate { get; set; }

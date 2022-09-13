@@ -10,7 +10,6 @@ namespace CafeteriaOrders.data
         public int Id { get; set; }
         [Required]
         public string name { get; set; }
-
         public string image { get; set; }
         public decimal OverAllRate { get; set; }
         public Categories category { get; set; }

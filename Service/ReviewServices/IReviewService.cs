@@ -10,14 +10,13 @@ namespace CafeteriaOrders.Service.Review
 {
     public interface IReviewService
     {
-        IEnumerable<Reviews> Get();
-
-        Task<Reviews> Details(int id);
-        Task<IEnumerable<GetReviewDtos>>  MealsReview(int MealId); // retreive all meals by its id
-        decimal CalcAvrg(List<GetReviewDtos> lst);
-        Task<Meals> updateAvrgRate(AddReviewDtos review);
-        Task<Reviews> Add(Reviews model);
-        Task Update(Reviews model);
+        Task<ServiceResponse<List<Reviews>>> Get();
+        Task<ServiceResponse<List<Reviews>>> Details(int id);
+        Task<ServiceResponse<Meals>> MealsReview(int MealId); // retreive all meals by its id
+        decimal CalcAvrg(List<Reviews> lst);
+        Task<Meals> updateAvrgRate(Reviews review);
+        Task<ServiceResponse<Reviews>> Add(Reviews model);
+        Task<ServiceResponse<Reviews>> Update(Reviews model);
         Task<bool> Delete(int id);
     }
 }

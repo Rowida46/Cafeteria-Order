@@ -13,9 +13,9 @@ namespace CafeteriaOrders.Service
 
         Task<ServiceResponse<List<Meals>>> Get();
 
-        Task<ServiceResponse<Meals>> Details(int id);
+        Task<ServiceResponse<List<Meals>>> Details(int id);
 
-        Task<ServiceResponse<List<Meals>>> HighestRate();
+       Task<ServiceResponse<List<Meals>>> HighestRate();
 
         Task<ServiceResponse<Meals>> Add(Meals model);
 

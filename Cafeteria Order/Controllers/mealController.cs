@@ -15,26 +15,22 @@ namespace Cafeteria_Order.Controllers
     public class MealController : ControllerBase
     {
         private readonly ImealServices _mealService;
-
         public MealController(ImealServices mealService)
         {
             _mealService = mealService;
         }
-
         [HttpGet]
         public IActionResult test()
         {
             return Ok("Testing Ok test");
         } 
-
         [HttpGet]
         public Task<ServiceResponse<List<Meals>>> Get() // get all lst
         {
             return _mealService.Get();
         }
-
         [HttpGet]
-        public async Task<ServiceResponse<Meals>> Details(int id)
+        public async Task<ServiceResponse<List<Meals>>> Details(int id)
         {
             return await _mealService.Details(id);
             /*
@@ -42,7 +38,6 @@ namespace Cafeteria_Order.Controllers
             return meal;
             */
         } // get spedific
-
         [HttpGet]
         public Task<ServiceResponse<List<Meals>>> HighestRate()
         {
@@ -52,7 +47,6 @@ namespace Cafeteria_Order.Controllers
             return top7;
             */
         }
-
         [HttpPost]
         public async Task<ServiceResponse<Meals>> Add(Meals model)
         {
@@ -63,7 +57,6 @@ namespace Cafeteria_Order.Controllers
             return meal;
             */
         }
-
         [HttpGet]
         public async Task<bool> Delete(int id)
         {
@@ -78,7 +71,6 @@ namespace Cafeteria_Order.Controllers
             return meal;
             */
         }
-
         [HttpPost]
         public async Task<ServiceResponse<Meals>> Edit(Meals mode)
         {

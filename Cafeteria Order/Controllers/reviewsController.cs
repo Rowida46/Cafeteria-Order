@@ -17,19 +17,18 @@ namespace Cafeteria_Order.Controllers
     public class reviewsController : ControllerBase
     {
         private readonly IReviewService _reviewService;
-
         public reviewsController(IReviewService reviewService)
         {
             _reviewService = reviewService;
         }
-        [HttpGet]
-        public IEnumerable<Reviews> Get()
-        {
-            return  _reviewService.Get();
-        }
         
         [HttpGet]
-        public async Task<Reviews> Details(int id)
+        public Task<ServiceResponse<List<Reviews>>> Get() // get all lst
+        {
+            return _reviewService.Get();
+        }
+        [HttpGet]
+        public async Task<ServiceResponse<List<Reviews>>> Details(int id)
         {
             return await _reviewService.Details(id);
 
@@ -38,18 +37,15 @@ namespace Cafeteria_Order.Controllers
             return rev;
             */
         } // get spedific
-
-        public async Task<IEnumerable<GetReviewDtos>> MealsReview(int MealId) // retreive all meals by its id
+        public async Task<ServiceResponse<Meals>> MealsReview(int MealId) // retreive all meals by its id
         {
             return await _reviewService.MealsReview(MealId);
            /* var meal = uof.review.getByMealId(MealId);
             return meal;
            */
         }
-        
-
         [HttpPost] 
-        public async Task<Meals> updateAvrgRate(AddReviewDtos review)
+        public  Task<Meals> updateAvrgRate(Reviews review)
         {
             
             //uof.Commit();
@@ -64,11 +60,10 @@ namespace Cafeteria_Order.Controllers
              *** 4- update the val of this meal -> commit update...
              */
           
-             return await _reviewService.updateAvrgRate(review);
+             return  _reviewService.updateAvrgRate(review);
         }
-
         [HttpPost]
-        public async Task<Reviews> Add(Reviews model)
+        public async Task<ServiceResponse<Reviews>> Add(Reviews model)
         {
              return await _reviewService.Add(model);
             /*
@@ -78,8 +73,6 @@ namespace Cafeteria_Order.Controllers
             return review;
             */
         }
-
-
         public async Task<bool> Delete(int id)
         {
             return await _reviewService.Delete(id);
@@ -89,14 +82,10 @@ namespace Cafeteria_Order.Controllers
             */
         }
 
-        public async Task<bool> Update(Reviews model)
+        public async Task<ServiceResponse<Reviews>> Update(Reviews model)
         {
-            try
-            {
-                await _reviewService.Update(model);
-                return true;
-            }
-            catch { return false; }
+     
+               return await _reviewService.Update(model);
             /*var review = uof.review.edit(model);
             uof.Commit();
             return review;
