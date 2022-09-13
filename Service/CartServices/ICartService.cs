@@ -11,16 +11,14 @@ namespace CafeteriaOrders.Service.CartServices
 {
     public interface ICartService
     {
-        Task<IEnumerable<GetCartDtos>> Get(); // done 
-        Task<IEnumerable<CartItemDtos>> GetCartItems(); // not so far
+        Task<ServiceResponse<List<Cart>>> Get(); // done 
+        Task<ServiceResponse<List<Cart>>> GetCartItems(); // not so far
         Task<decimal> GetTotalPrice(); // not 
-        Task<GetCartDtos> Details(int id); // of a spesific
+        Task<ServiceResponse<List<Cart>>> Details(int id); // of a spesific
+        Task<ServiceResponse<Cart>> Add(Cart model);
+        Task<bool> Delete(int id);
 
-        Task<Cart> Add(AddCartDtos model);
-
-        Task<Cart> Delete(int id);
-
-        Task<Cart> Edit(GetCartDtos model);
+        Task<ServiceResponse<Cart>> Edit(Cart model);
 
         decimal checkValidItem(CartItem model);
 

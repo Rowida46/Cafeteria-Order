@@ -6,6 +6,7 @@ using CafeteriaOrders.logic.Models;
 using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,47 +16,129 @@ namespace CafeteriaOrders.Service.CartServices
     {
         Context context;
         UnitOfWorkRepo uof;
-        IUnitOfWork unitOfWork;
+        IUnitOfWork _uof;
         public CartServices(Context context)
         {
             // unitOfWork = new UnitOfWork(context);
-
-            uof = new UnitOfWorkRepo(context);
+            _uof = new UnitOfWorkGeneric(context);
         }
         
-        public async Task<Cart> Add(AddCartDtos model)
+        public async Task<ServiceResponse<Cart>> Add(Cart model)
         {
-            var crt = uof.carts.add(model);
-            uof.Commit();
-            return crt;
+            var service = new ServiceResponse<Cart>();
+            try
+            {
+                var meal = await _uof.CartsRepository.Create(model);
+                _uof.Commit();
+                service.Data = model;
+                service.Message = "Cart Added";
+            }
+            catch (Exception e)
+            {
+                service.Message = e.Message;
+                service.Success = false;
+            }
+            return service;
+            
+            //    var crt = uof.carts.add(model);
+            //    uof.Commit();
+            //    return crt;
         }
-
-                                                                                                                                                                                                                                                                
-        public  async Task<Cart> Delete(int id)
+                                                                                                                                                                                                                                                        
+        public async Task<bool> Delete(int id)
         {
-            var meal = uof.carts.remove(id);
+            try
+            {
+                await _uof.CartsRepository.Delete(id);
+                _uof.Commit();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+            /*var meal = uof.carts.remove(id);
             uof.Commit();
             return meal;
+            */
         }
 
-        public async Task<GetCartDtos> Details(int id)
+        public async Task<ServiceResponse<List<Cart>>> Details(int id)
         {
-            throw new NotImplementedException();
+            var service = new ServiceResponse<List<Cart>>();
+            try
+            {
+                var tmp = _uof.CartsRepository.Get(includeProperties : "cartItems").Where(crt =>crt.id == id).ToList();
+                service.Data = tmp;
+                service.Success = tmp == null ? false : true;
+                service.Message = "Details of a specific Cart";
+
+            }
+            catch (Exception e)
+            {
+                service.Success = false;
+                service.Message = e.Message;
+            }
+            return service;
         }
 
-        public async Task<Cart> Edit(GetCartDtos model)
+        public async Task<ServiceResponse<Cart>> Edit(Cart model)
         {
-            return uof.carts.edit(model);
+            var service = new ServiceResponse<Cart>();
+
+            try
+            {
+                await _uof.CartsRepository.Update(model.id, model);
+                _uof.Commit();
+                service.Success = true;
+                service.Data = model;
+                service.Message = "Updated";
+            }
+            catch (Exception e)
+            {
+                service.Message = e.Message;
+                service.Success = false;
+            }
+            return service;
         }
 
-        public async Task<IEnumerable<GetCartDtos>> Get()
+        public async Task<ServiceResponse<List<Cart>>> Get()
         {
-            return uof.carts.get();
+            var service = new ServiceResponse<List<Cart>>();
+            try
+            {
+                var tmp = _uof.CartsRepository.Get(includeProperties: "cartItems").ToList();
+                service.Data = tmp;
+                service.Success = tmp == null ? false : true;
+                service.Message = "View Carts";
+
+            }
+            catch (Exception e)
+            {
+                service.Success = false;
+                service.Message = e.Message;
+            }
+            return service;
         }
 
-        public async Task<IEnumerable<CartItemDtos>> GetCartItems()
+        public async Task<ServiceResponse<List<Cart>>> GetCartItems()
         {
-            throw new NotImplementedException();
+            var service = new ServiceResponse<List<Cart>>();
+            try
+            {
+                var tmp = _uof.CartsRepository.Get(includeProperties: "CartItemd").ToList();
+                service.Data = tmp;
+                service.Success = tmp == null ? false : true;
+                service.Message = "View Meals";
+
+            }
+            catch (Exception e)
+            {
+                service.Success = false;
+                service.Message = e.Message;
+            }
+            return service;
         }
 
         public async Task<decimal> GetTotalPrice()

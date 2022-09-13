@@ -22,34 +22,34 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<GetCartDtos>> Get()
+        public async Task<ServiceResponse<List<Cart>>> Get()
         {
             return await _cartService.Get();
         }
 
 
         [HttpGet]
-        public async Task<GetCartDtos> Details(int id)
+        public async Task<ServiceResponse<List<Cart>>>  Details(int id)
         {
             return await _cartService.Details(id);
         }
 
 
         [HttpPost]
-        public async Task<Cart> Add(AddCartDtos model)
+        public async Task<ServiceResponse<Cart>> Add(Cart model)
         {
             return await _cartService.Add(model);
         }
 
         [HttpGet]
-        public async Task<Cart> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
             return await _cartService.Delete(id);
 
         }
 
         [HttpPost]
-        public async Task<Cart> Edit(GetCartDtos model)
+        public async Task<ServiceResponse<Cart>> Edit(Cart model)
         {
             return await _cartService.Edit(model);
 
