@@ -23,6 +23,7 @@ namespace Cafeteria_Order.Controllers
         {
             return await _userService.Register(userModel);
         }
+        
         [HttpPost]
         [AllowAnonymous]
         public Task<LoginResponsetDto> Login(LoginRequestDto userModel)

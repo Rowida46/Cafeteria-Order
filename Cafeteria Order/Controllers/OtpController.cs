@@ -31,7 +31,6 @@ namespace Cafeteria_Order.Controllers
         [HttpPost]
         public async Task<VerificationResult> SendOtpCode(regDTO model)
         {
-
             try
             {
                 return await _otpService.StartVerificationAsync(model.phone, model.channel);

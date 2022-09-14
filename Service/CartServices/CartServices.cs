@@ -6,6 +6,7 @@ using CafeteriaOrders.logic.Models;
 using CafeteriaOrders.UnitOfWork.GenericUnitOfWork;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,9 @@ namespace CafeteriaOrders.Service.CartServices
         IUnitOfWork _uof;
         public CartServices(Context context)
         {
-            // unitOfWork = new UnitOfWork(context);
+            uof = new UnitOfWorkRepo(context);
             _uof = new UnitOfWorkGeneric(context);
         }
-        
         public async Task<ServiceResponse<Cart>> Add(Cart model)
         {
             var service = new ServiceResponse<Cart>();
@@ -149,11 +149,12 @@ namespace CafeteriaOrders.Service.CartServices
             /*
              1-  get meal details by id
              2- check quantity 
+             3- calc total price
              */
             // Meals meal = uof.meal.details(model.mealId);
             var meal = uof.meal.details(model.mealId);
             decimal totalPrice =0;
-            if(meal.numberofUnits == model.quantity)
+            if(meal.numberofUnits >= model.quantity)
             {
                 totalPrice = model.quantity * meal.price;
                 return totalPrice;
@@ -165,14 +166,15 @@ namespace CafeteriaOrders.Service.CartServices
         public async Task<ServiceResponse<GetCartDtos>> checkout(AddCartDtos model)
         {
             var service = new ServiceResponse<GetCartDtos>();
-            string massage= "";
-            var cart = new GetCartDtos();
+            //string massage= "";
+            List<string> massage = new List<string>();
+            var cart = new GetCartDtos { cartItems = new Collection<CartItem>(), totalPrice = 0 };
             decimal totalprice = 0;
             var items = model.cartItems;
             foreach (var item in items)
-            {
+            { 
                 decimal price = checkValidItem(item);
-                if (price.Equals(0.0))
+                if (!price.Equals(0))
                 {
                     cart.cartItems.Add(item);
                    // listValid.Add(item);
@@ -181,13 +183,13 @@ namespace CafeteriaOrders.Service.CartServices
                 else
                 {
                     var meal = uof.meal.details(item.mealId);
-                    massage += meal.name + " and ";
+                    massage.Add(meal.name) ;
                 }
             }
             cart.totalPrice = totalprice;
             service.Data = cart;
-            service.Message = massage+"this items is not vaild";
-
+            service.Message = "Your Cart Receipt";
+            service.Message += massage == null ? "" : " This Items are out of Stock " + string.Join(" and ", massage.ToArray());
             return service;
         }
     }

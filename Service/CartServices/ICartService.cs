@@ -17,14 +17,10 @@ namespace CafeteriaOrders.Service.CartServices
         Task<ServiceResponse<List<Cart>>> Details(int id); // of a spesific
         Task<ServiceResponse<Cart>> Add(Cart model);
         Task<bool> Delete(int id);
-
         Task<ServiceResponse<Cart>> Edit(Cart model);
-
         decimal checkValidItem(CartItem model);
-
         // Task<ServiceResponse<GetCartDtos>> checkout(List<CartItem> model);
         Task<ServiceResponse<GetCartDtos>> checkout(AddCartDtos model);
-
 
     }
 }

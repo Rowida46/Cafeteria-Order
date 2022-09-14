@@ -57,8 +57,7 @@ namespace CafeteriaOrders.Service.Review
                 service.Success = false;
                 service.Message = e.Message;
             }
-            return service;
-            
+            return service; 
         }
         public async Task<ServiceResponse<List<Reviews>>> Get()
         {
@@ -86,7 +85,7 @@ namespace CafeteriaOrders.Service.Review
                 var meal = await _uof.MealsRepository.GetById(MealId);
                 service.Data = meal;
                 service.Success = meal == null ? false : true;
-                service.Message = "Review f a Spesific Meal";
+                service.Message = "Review of a Spesific Meal";
             }
             catch (Exception e)
             {
@@ -147,7 +146,6 @@ namespace CafeteriaOrders.Service.Review
             //return updatedMeal;
             return meal;
         }
-
         public decimal CalcAvrg(List<Reviews> lst)
         {
             var range = lst.Count();
@@ -159,7 +157,6 @@ namespace CafeteriaOrders.Service.Review
             }
 
             decimal averageRating = lst.Count > 0 ? (decimal)sumOfRatings / lst.Count : 0;
-
 
             return averageRating;
         }

@@ -15,25 +15,22 @@ namespace Cafeteria_Order.Controllers
     public class CartController : ControllerBase
     {
         private readonly ICartService _cartService;
-
         public CartController(ICartService cartService)
         {
             _cartService = cartService;
         }
-
+        
         [HttpGet]
         public async Task<ServiceResponse<List<Cart>>> Get()
         {
             return await _cartService.Get();
         }
 
-
         [HttpGet]
         public async Task<ServiceResponse<List<Cart>>>  Details(int id)
         {
             return await _cartService.Details(id);
         }
-
 
         [HttpPost]
         public async Task<ServiceResponse<Cart>> Add(Cart model)
@@ -56,7 +53,6 @@ namespace Cafeteria_Order.Controllers
         }
 
         [HttpPost]
-        // public async Task<ServiceResponse<GetCartDtos>> checkout(List<CartItem> model)
         public async Task<ServiceResponse<GetCartDtos>> checkout(AddCartDtos model)
         {
             return await _cartService.checkout(model);
